@@ -1,2 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
+
+a {
+    cursor: pointer;
+}
+.spacer {
+    flex: 1 1 auto;
+}
+mat-sidenav.hide {
+    display: none;
+}
+.nav-link {
+    text-decoration: none;
+    color: inherit;
+}
+.nav-link:hover { 
+    color: inherit;
+}

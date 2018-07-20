@@ -1,3 +1,4 @@
+import { MatSidenavModule } from '@angular/material/sidenav';
 import { NgModule } from '@angular/core';
 import {
   MatCheckboxModule,
@@ -13,7 +14,9 @@ import {
   MatTooltipModule,
   MatTabsModule,
   MatDialogModule,
-  MatCardModule
+  MatCardModule,
+  MatToolbarModule,
+  MatListModule
 } from '@angular/material';
 @NgModule({
   exports: [
@@ -32,7 +35,10 @@ import {
     MatTabsModule,
     MatTabsModule,
     MatDialogModule,
-    MatCardModule
+    MatCardModule,
+    MatToolbarModule,
+    MatSidenavModule,
+    MatListModule
   ]
 })
 export class MatComponentsModule { }
