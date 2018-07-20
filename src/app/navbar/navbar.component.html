@@ -1,0 +1,42 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav
+    #drawer
+    class="sidenav"
+    [class.hide]="!(isHandset$ | async)"
+    fixedInViewport="true"
+    [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+    [mode]="(isHandset$ | async) ? 'over' : 'side'"
+    [opened]="!(isHandset$ | async)">
+    <mat-toolbar color="primary">Menu</mat-toolbar>
+    <mat-nav-list>
+      <a mat-list-item href="#">Community</a>
+      <a mat-list-item routerLink="/directory">Directory</a>
+      <a mat-list-item routerLink="/market">Market Place</a>
+      <a mat-list-item routerLink="/login">Login</a>
+      <a mat-list-item routerLink="/signup">SignUp</a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar color="primary">
+      <button
+        type="button"
+        aria-label="Toggle sidenav"
+        mat-icon-button
+        (click)="drawer.toggle()"
+        *ngIf="isHandset$ | async">
+        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+      </button>
+      <span>TantaBizHub</span>
+      <span class="spacer"></span>
+      <ng-container *ngIf="!(isHandset$ | async)">
+        <span><a class="nav-link" mat-button href="#">Community</a></span>
+        <span><a class="nav-link" mat-button routerLink="/directory">Directory</a></span>
+        <span><a class="nav-link" mat-button routerLink="/market">Market</a></span>
+        <span><a class="nav-link" mat-button routerLink="/login">Login</a></span>
+        <span><a class="nav-link" mat-button routerLink="/signup">Signup</a></span>
+      </ng-container>
+
+    </mat-toolbar>
+    <!-- Add Content Here -->
+  </mat-sidenav-content>
+</mat-sidenav-container>
