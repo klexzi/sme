@@ -7,14 +7,17 @@ import {
   MatDatepickerModule,
   MatNativeDateModule,
   MatIconModule,
-  MatButtonModule,
+
   MatChipsModule,
   MatProgressSpinnerModule,
   MatTooltipModule,
   MatTabsModule,
   MatDialogModule,
-  MatCardModule
+  MatCardModule,
+
 } from '@angular/material';
+import {MatButtonModule} from '@angular/material/button';
+import {MatToolbarModule} from '@angular/material/toolbar';
 @NgModule({
   exports: [
     MatCheckboxModule,
@@ -32,7 +35,8 @@ import {
     MatTabsModule,
     MatTabsModule,
     MatDialogModule,
-    MatCardModule
+    MatCardModule,
+    MatToolbarModule
   ]
 })
 export class MatComponentsModule { }
