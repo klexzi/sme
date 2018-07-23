@@ -25,7 +25,7 @@ import { MarketComponent } from './market/market.component';
     MatComponentsModule,
     RouterModule.forRoot([
       { path: '', component: HomeComponent },
-      { path: 'market', component: MarketComponent }    )
+      { path: 'market', component: MarketComponent } ])
   ],
   providers: [],
   bootstrap: [AppComponent]
