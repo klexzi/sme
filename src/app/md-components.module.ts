@@ -1,3 +1,4 @@
+import { MatSidenavModule } from '@angular/material/sidenav';
 import { NgModule } from '@angular/core';
 import {
   MatCheckboxModule,
@@ -14,10 +15,12 @@ import {
   MatTabsModule,
   MatDialogModule,
   MatCardModule,
-
+  
+  MatListModule
 } from '@angular/material';
 import {MatButtonModule} from '@angular/material/button';
 import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatDividerModule} from '@angular/material/divider';
 @NgModule({
   exports: [
     MatCheckboxModule,
@@ -36,7 +39,10 @@ import {MatToolbarModule} from '@angular/material/toolbar';
     MatTabsModule,
     MatDialogModule,
     MatCardModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatSidenavModule,
+    MatListModule,
+    MatDividerModule,
   ]
 })
 export class MatComponentsModule { }

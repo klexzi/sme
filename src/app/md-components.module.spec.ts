@@ -1,6 +1,6 @@
 import { MatComponentsModule } from './md-components.module';
 
-describe('MatComponentsModule', () => {
+describe('MdComponentsModule', () => {
   let mdComponentsModule: MatComponentsModule;
 
   beforeEach(() => {
