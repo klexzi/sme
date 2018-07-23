@@ -5,6 +5,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { MatComponentsModule } from './md-components.module';
 import { MarketComponent } from './market/market.component';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { MarketComponent } from './market/market.component';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    MatComponentsModule
+    MatComponentsModule,
+    FlexLayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]
