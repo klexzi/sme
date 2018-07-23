@@ -29,6 +29,7 @@ import { ProfiledirectoryComponent } from './profiledirectory/profiledirectory.c
   ],
   imports: [
     BrowserModule,
+    FlexLayoutModule,
     BrowserAnimationsModule,
     FlexLayoutModule,
     MatComponentsModule,
