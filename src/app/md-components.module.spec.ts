@@ -1,10 +1,10 @@
-import { MdComponentsModule } from './md-components.module';
+import { MatComponentsModule } from './md-components.module';
 
 describe('MdComponentsModule', () => {
-  let mdComponentsModule: MdComponentsModule;
+  let mdComponentsModule: MatComponentsModule;
 
   beforeEach(() => {
-    mdComponentsModule = new MdComponentsModule();
+    mdComponentsModule = new MatComponentsModule();
   });
 
   it('should create an instance', () => {

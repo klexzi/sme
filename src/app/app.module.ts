@@ -1,3 +1,4 @@
+import { HomeComponent } from './home/home.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -7,18 +8,22 @@ import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { MatComponentsModule } from './md-components.module';
 import { FooterComponent } from './footer/footer.component';
+import { MarketComponent } from './market/market.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
+    MarketComponent,
+    NavbarComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     MatComponentsModule,
-    RouterModule.forRoot(
+    RouterModule.forRoot([
       { path: '', component: HomeComponent },
       { path: 'market', component: MarketComponent }    )
   ],
