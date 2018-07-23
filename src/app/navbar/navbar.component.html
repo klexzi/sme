@@ -1,4 +1,5 @@
-<mat-sidenav-container class="sidenav-container">
+<nav class="sticky-top">
+  <mat-sidenav-container class="sidenav-container">
   <mat-sidenav
     #drawer
     class="sidenav"
@@ -18,7 +19,7 @@
   </mat-sidenav>
   <mat-sidenav-content>
     
-    <mat-toolbar color="primary">
+    <mat-toolbar color="primary" class="stick-top">
       <button
         type="button"
         aria-label="Toggle sidenav"
@@ -27,7 +28,7 @@
         *ngIf="isHandset$ | async">
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
-      <span>TantaBizHub</span>
+      <span> <a routerLink="/" class="nav-link">TantaBizHub</a></span>
       <span class="spacer"></span>
       <ng-container *ngIf="!(isHandset$ | async)">
         <span><a class="nav-link" mat-button href="#">Community</a></span>
@@ -41,3 +42,5 @@
     <!-- Add Content Here -->
   </mat-sidenav-content>
 </mat-sidenav-container>
+</nav>
+

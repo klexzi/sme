@@ -22,6 +22,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
   ],
   imports: [
     BrowserModule,
+    FlexLayoutModule,
     BrowserAnimationsModule,
     MatComponentsModule,
     RouterModule.forRoot([
