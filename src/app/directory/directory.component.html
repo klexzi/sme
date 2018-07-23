@@ -1,0 +1,85 @@
+<!-- <div fxLayout fxLayout.xs="column" fxLayoutAlign="end" fxLayoutGap="5px" fxLayoutGap.xs="1px">
+    <div> <img class="img-fluid" fxFlex="100%" fxFlexFill src="http://ictbrainchallenge.com/wp-content/uploads/2018/05/1-1024x256.jpg" alt=""></div><br/>
+
+</div> -->
+<div fxLayout style="height:400px; background-image: url(http://ictbrainchallenge.com/wp-content/uploads/2018/05/1-1024x256.jpg); background-size: cover; height: 135px;">
+    <span fxFlex="100%" fxFlexAlign="center" fxFlexAlign.end="center" fxFlexOffset="350px" fxFlexOffset.xs="40px" fxFlexOffset.sm="160px">  <input  color="warn" type="search" style=" height:50px; width:300px" placeholder="Find a merchant"> &nbsp; &nbsp;<button mat-raised-button color="warn" style=" height:50px; width:170px">Search</button></span>
+
+
+</div>
+
+
+<mat-toolbar color="primary">
+    <mat-toolbar-row id="dtoolbar" fxLayout="row" fxLayout.xs="column" fxLayoutAlign="center" fxLayoutGap="0px" fxLayoutGap.xs="1px" fxLayoutWrap>
+
+        <span fxHide.sm="true" fxHide.xs="true" fxHide.md="true"> <img  fxFlexOffset="300px" class="img-fluid" src="https://www.smearena.com.ng/client/images/socialcommerce/merchant-group.png"></span>
+        <span fxFlexAlign="center" fxFlex="60%"><span fxFlexOffset="400px" fxFlexOffset.xs="5px" fxFlexOffset.md="50px" fxFlexOffset.sm="50px">search for any service provider <br/> use our service  </span></span>
+
+        <span fxFlex="40%" fxFlexAlign="center" FxFlexFill> <button  mat-raised-button color="warn">  <mat-icon  >work  </mat-icon> List your business</button></span>
+
+    </mat-toolbar-row>
+
+</mat-toolbar>
+
+
+<mat-list fxLayout id="bizlayout" fxLayout.xs="column" fxLayout.sm="row" fxLayout.md="row " fxLayoutGap="0.5%" fxLayoutAlign="center">
+
+
+    <div fxFlex="50%" class="leftrow">
+
+        <div fxLayout="row-reverse" fxLayoutAlign="start start" fxLayoutGap="10px">
+            <h3 fxFlexOffset="130px" fxFlex="100%"><strong>Tob Brands</strong></h3>
+        </div>
+        <mat-grid-list fxLayout [responsiveCols]="{xs: 4, sm: 4, md: 4, lg: 4, xl: 6}" class="container">
+
+            <mat-grid-tile fxFlex>1</mat-grid-tile>
+            <mat-grid-tile>2</mat-grid-tile>
+            <mat-grid-tile>3</mat-grid-tile>
+            <mat-grid-tile>4</mat-grid-tile>
+            <mat-grid-tile>5</mat-grid-tile>
+            <mat-grid-tile>6</mat-grid-tile>
+            <mat-grid-tile>7</mat-grid-tile>
+            <mat-grid-tile>8</mat-grid-tile>
+            <mat-grid-tile>5</mat-grid-tile>
+            <mat-grid-tile>6</mat-grid-tile>
+            <mat-grid-tile>7</mat-grid-tile>
+            <mat-grid-tile>8</mat-grid-tile>
+
+
+
+        </mat-grid-list>
+        <a href="#"> <span class="text-danger"> click this link</span></a>
+    </div>
+
+
+
+    <mat-divider [vertical]="true "></mat-divider>
+    <div fxFlex="50% ">
+
+        <div fxLayout="row-reverse" fxLayoutAlign="start start" fxLayoutGap="10px">
+            <h3 fxFlexOffset="130px" fxFlex="100%"><strong>Promoted business</strong></h3>
+        </div>
+
+        <mat-grid-list [responsiveCols]="{xs: 4, sm: 4, md: 4, lg: 4, xl: 4}" class="container">
+
+            <mat-grid-tile>1</mat-grid-tile>
+            <mat-grid-tile>2</mat-grid-tile>
+            <mat-grid-tile>3</mat-grid-tile>
+            <mat-grid-tile>4</mat-grid-tile>
+            <mat-grid-tile>5</mat-grid-tile>
+            <mat-grid-tile>6</mat-grid-tile>
+            <mat-grid-tile>7</mat-grid-tile>
+            <mat-grid-tile>8</mat-grid-tile>
+            <mat-grid-tile>5</mat-grid-tile>
+            <mat-grid-tile>6</mat-grid-tile>
+            <mat-grid-tile>7</mat-grid-tile>
+            <mat-grid-tile>8</mat-grid-tile>
+
+
+        </mat-grid-list>
+
+
+
+        <a href="#"> <span class="text-danger"> click this link</span></a>
+    </div>
+</mat-list>
