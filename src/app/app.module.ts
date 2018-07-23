@@ -26,7 +26,6 @@ import { ProfiledirectoryComponent } from './profiledirectory/profiledirectory.c
     DirectoryComponent,
     GridDirective,
     ProfiledirectoryComponent
-    
   ],
   imports: [
     BrowserModule,
