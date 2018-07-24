@@ -36,7 +36,8 @@ import { ProfiledirectoryComponent } from './profiledirectory/profiledirectory.c
     RouterModule.forRoot([
       { path: '', component: HomeComponent },
       { path: 'market', component: MarketComponent },
-      { path: 'directory', component: DirectoryComponent }
+      { path: 'directory', component: DirectoryComponent },
+      { path: 'merchant', component: ProfiledirectoryComponent }
      ])
   ],
   providers: [],
