@@ -1,0 +1,53 @@
+mat-icon {
+    padding-top: 15px;
+    font-size: xx-large;
+    margin-right: 5px;
+}
+
+.name {
+    color: #424243;
+    font-size: x-large;
+    padding-bottom: 1px;
+    width: 305px;
+    min-height: 49px;
+    line-height: 1.9rem;
+}
+
+.price {
+    color:#8561c5;
+    font-size: medium;
+    font-weight: 700;
+    padding-left: 5px;
+}
+
+.strike {
+    text-decoration: line-through;
+}
+
+.hlabel {
+    font-size: small;
+    margin: 5px 5px 5px 0;
+    color: #bababa;
+}
+
+.slabel {
+    font-size: small;
+    color: #424243;
+}
+
+
+.prod-description-title {
+    margin-top: 15px;
+    font-size: 700;
+    font-weight: bold;
+}
+
+.phone {
+    margin-bottom: 0;
+}
+.phone span {
+    font-size: 20px;
+}
+.phone mat-icon {
+    font-size: 20px;
+}

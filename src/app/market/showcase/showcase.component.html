@@ -1,0 +1,71 @@
+<div class="container">
+    <ul class="prod-navigation" fxHide.xs fxLayout.xs="column" fxFlexAlign="center">
+      <li class="item" fxFlex="16.6%">first item</li>
+      <li class="item" fxFlex="16.6%">second item</li>
+      <li class="item" fxFlex="16.6%">third item</li>
+      <li class="item" fxFlex="16.6%">fourth item</li>
+      <li class="item" fxFlex="16.6%">fifth item</li>
+      <li class="item" fxFlex="16.6%">sixth item</li>
+    </ul>
+</div>
+
+
+<div class="container">
+  <div class="row">
+        <div class="col-md-12 ">
+            <nav class="breadcrumb">
+              <a class="breadcrumb-item" routerLink="/market">Markets</a>
+              <a class="breadcrumb-item" routerLink="/market/fashions" >Fashions</a>  <!--change this nav based on url-->
+              <li class="breadcrumb-item">Product name displays here</li>
+            </nav>
+        </div>
+  </div>
+</div>
+<!--End of Slider and Breadcrumbs-->
+
+
+<div class="container ">
+  <div class="row ">
+     <div class="col-md-12">
+       <div class="row breadcrumb mx-0">
+          <div class="col-sm-12 col-md-4">
+              <img class="product img-fluid shadow" src="https://gastsmearena.akamaized.net/53988abf-10b1-4638-87a1-d01977bf76fa_800">
+          </div>
+
+          <div class="col-sm-12 col-md-8">
+              <div class="star-icons px-2"> <mat-icon>star</mat-icon> <mat-icon>star</mat-icon> <mat-icon>star</mat-icon> <mat-icon>star</mat-icon> <mat-icon>star</mat-icon>  </div>
+              <div class="name px-2"> Nigeria Super Eagles Dri Fit 18/2019 Home Away Jersey</div>
+              <div><!-- ngIf: productOriginalPrice!=productFinalPrice -->
+                <span class="price px-2">₦ 7,200.00</span>
+                <span class="price strike">₦ 8,000.00</span></div>
+
+                <div class="hlabel px-2">By:<a [routerLink]="['/merchant/profile', id]" ><span class="slabel ">Prestige Store</span></a></div>
+
+                 <!--Product Description-->
+                 <div class="prod-description-title px-2">Description</div>
+                <div class="prod-description px-2">
+                    note: price quoted is for one jersey.
+                    > available in size: s. m. l. xl. 2xl
+                    >female & children version also available
+                    > men's football shirt.
+                    > crew neck.
+                    > short sleeves.
+                    > dri-fit.
+                    > nigeria crest embroidery.
+                    > sponsor branding embroidery.
+                    > 100% polyester.
+                    > machine washable.
+                    > imported.
+                </div>
+                <div class="contact-info px-2">
+                   <P class="phone"><mat-icon>stay_primary_portrait</mat-icon><span>0808299999</span></P>
+                   <P class="phone"><mat-icon>stay_primary_portrait</mat-icon><span>0808299999</span></P>
+                   <p class="email"><mat-icon></mat-icon></p>
+                </div>
+
+          </div>
+       </div>
+        
+     </div>
+  </div>
+</div>
