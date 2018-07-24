@@ -2,6 +2,9 @@
 
 @import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
 
+html, body {
+    font-family: 'Roboto';
+}
 a {
     cursor: pointer;
 }

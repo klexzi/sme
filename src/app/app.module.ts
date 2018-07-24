@@ -17,6 +17,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FashionComponent } from './market/fashion/fashion.component';
 import { ShowcaseComponent } from './market/showcase/showcase.component';
 import { MerchantComponent } from './directory/merchant/merchant.component';
+import { AdvertiseComponent } from './help/advertise/advertise.component';
 
 
 @NgModule({
@@ -32,7 +33,8 @@ import { MerchantComponent } from './directory/merchant/merchant.component';
     MerchantComponent,
     ContactComponent,
     FashionComponent,
-    ShowcaseComponent
+    ShowcaseComponent,
+    AdvertiseComponent
   ],
   imports: [
     BrowserModule,
@@ -49,7 +51,8 @@ import { MerchantComponent } from './directory/merchant/merchant.component';
      { path: 'market/fashions', component: FashionComponent  },
       { path: 'market', component: MarketComponent },
       { path: 'directory', component: DirectoryComponent },
-      { path: 'help/contact-us', component: ContactComponent }
+      { path: 'help/contact-us', component: ContactComponent },
+      { path: 'help/advertise', component: AdvertiseComponent }
      ])
   ],
   providers: [],
