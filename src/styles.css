@@ -40,3 +40,11 @@ mat-sidenav.hide {
     width: 294px;
 }
 
+/** colors **/
+.bgr-primary {
+    background-color: #6f42c1;
+}
+.bgr-accent {
+    background-color: #ffd740;
+}
+

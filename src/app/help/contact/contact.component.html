@@ -1,0 +1,87 @@
+<div class="container bg-light">
+  <div class="row no-gutters my-3">
+    <div class=" rounded col-md-12 col-sm-12 bg-white border border-light shadow">
+      <div class="row">
+        <div class="col-md-6 col-sm-6 p-md-5 p-sm-3">
+          <form [formGroup]="form" (ngSubmit)="sendMail(form.value)">
+            <div class="form">
+                <mat-form-field appearance="outline">
+                    <mat-label>Name</mat-label>
+                    <input
+                    matInput 
+                    name="name"
+                    formControlName="name"
+                    placeholder="Enter Your Name"
+                    maxlength="300" required>
+                    <mat-icon matSuffix>person</mat-icon>
+                    <mat-error> {{ getNameError() }} </mat-error>
+                </mat-form-field>
+                <mat-form-field appearance="outline">
+                    <mat-label>Subject</mat-label>
+                    <input
+                    matInput 
+                    name="subject"
+                    formControlName="subject"
+                    placeholder="Enter The Subject of The Message"
+                    maxlength="20"
+                    pattern="^[a-zA-Z ]*$" required>
+                    <mat-icon matSuffix>subject</mat-icon>
+                    <mat-error> {{ getSubjectError() }} </mat-error>
+                </mat-form-field>
+                <mat-form-field appearance="outline">
+                    <mat-label>Email</mat-label>
+                    <input
+                    matInput 
+                    name="email"
+                    type="email"
+                    formControlName="email"
+                    placeholder="Enter Your valid Email Address"
+                    maxlength="300" required>
+                    <mat-icon matSuffix>email</mat-icon>
+                    <mat-error> {{ getEmailError() }} </mat-error>
+                </mat-form-field>  
+                <mat-form-field appearance="outline">
+                    <mat-label>Message</mat-label>
+                    <textarea
+                    matInput 
+                    name="message"
+                    formControlName="message"
+                    placeholder="Enter Your Message"
+                    rows="10"
+                    maxlength="500" 
+                    style="resize: none" required>
+                    </textarea>
+                    <mat-icon matSuffix>message</mat-icon>
+                    <mat-error> {{ getEmailError() }} </mat-error>
+                </mat-form-field> 
+                  <button type="submit" class="mat-button" mat-raised-button color="accent">Send</button>
+                  <br/>
+            </div>
+          </form>
+        </div>
+        <div class="col-md-6 col-sm-6 bgr-accent text-white p-md-5 p-sm-3">
+            <h2 class="mat-display-1">Contact Us</h2>
+            <p class="mat-body-2">
+                we are delighted to help you.
+                for questions and enquiries, 
+                please contact us via the information provided below, 
+                and we will get back to you within 24 hours.
+            </p>
+            <div class="border border-light border-left-0 border-right-0 p-md-2 p-sm-1 mb-0"><h5 class="mat-subhead">Info@email.com</h5></div>
+            <div class="border border-light border-left-0 border-right-0 border-top-0 p-md-2 p-sm-1 mb-0"><h5 class="mat-subhead">070xxxxxxxx</h5></div>
+            <div class="my-2">
+                <img src="../../../assets/images/contact.PNG" alt="" class="img-fluid">
+            </div>
+
+            <p class="mat-subhead">
+                Visit us at xx, street name, <br/>
+                City,<br/>
+                Country.
+            </p>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>

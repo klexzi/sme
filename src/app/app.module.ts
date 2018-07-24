@@ -13,6 +13,8 @@ import { MarketComponent } from './market/market.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { GridDirective } from './grid.directive';
 import { ProfiledirectoryComponent } from './profiledirectory/profiledirectory.component';
+import { ContactComponent } from './help/contact/contact.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -25,10 +27,13 @@ import { ProfiledirectoryComponent } from './profiledirectory/profiledirectory.c
     HomeComponent,
     DirectoryComponent,
     GridDirective,
-    ProfiledirectoryComponent
+    ProfiledirectoryComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
+    FormsModule,
+    ReactiveFormsModule,
     FlexLayoutModule,
     BrowserAnimationsModule,
     FlexLayoutModule,
@@ -37,7 +42,8 @@ import { ProfiledirectoryComponent } from './profiledirectory/profiledirectory.c
     RouterModule.forRoot([
       { path: '', component: HomeComponent },
       { path: 'market', component: MarketComponent },
-      { path: 'directory', component: DirectoryComponent }
+      { path: 'directory', component: DirectoryComponent },
+      { path: 'help/contact-us', component: ContactComponent }
      ])
   ],
   providers: [],
