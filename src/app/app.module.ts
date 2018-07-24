@@ -13,6 +13,8 @@ import { MarketComponent } from './market/market.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { GridDirective } from './grid.directive';
 import { ProfiledirectoryComponent } from './profiledirectory/profiledirectory.component';
+import { FashionComponent } from './market/fashion/fashion.component';
+import { ShowcaseComponent } from './market/showcase/showcase.component';
 
 
 @NgModule({
@@ -25,7 +27,9 @@ import { ProfiledirectoryComponent } from './profiledirectory/profiledirectory.c
     HomeComponent,
     DirectoryComponent,
     GridDirective,
-    ProfiledirectoryComponent
+    ProfiledirectoryComponent,
+    FashionComponent,
+    ShowcaseComponent
   ],
   imports: [
     BrowserModule,
@@ -36,8 +40,11 @@ import { ProfiledirectoryComponent } from './profiledirectory/profiledirectory.c
     FlexLayoutModule,
     RouterModule.forRoot([
       { path: '', component: HomeComponent },
+      { path: 'market/fashions/:id', component: ShowcaseComponent},
+     { path: 'market/fashions', component: FashionComponent  },
       { path: 'market', component: MarketComponent },
-      { path: 'directory', component: DirectoryComponent }
+      { path: 'directory', component: DirectoryComponent },
+
      ])
   ],
   providers: [],

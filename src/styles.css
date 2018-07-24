@@ -24,3 +24,21 @@ mat-sidenav.hide {
 }
 
 
+/* Market glboabal styles */
+.prod-navigation {
+    list-style: none;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-color: #e8e5e5;
+    border-style: solid;
+    border-width: 1px 0; 
+}
+.prod-navigation:first-child {
+    padding-left: 0;
+}
+.prod-navigation li {
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    color: #424243;
+}
