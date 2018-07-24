@@ -18,6 +18,8 @@ import { FashionComponent } from './market/fashion/fashion.component';
 import { ShowcaseComponent } from './market/showcase/showcase.component';
 import { MerchantComponent } from './directory/merchant/merchant.component';
 import { AdvertiseComponent } from './help/advertise/advertise.component';
+import { BrandsComponent } from './market/brands/brands.component';
+import { ElectronicsComponent } from './market/electronics/electronics.component';
 
 
 @NgModule({
@@ -34,7 +36,9 @@ import { AdvertiseComponent } from './help/advertise/advertise.component';
     ContactComponent,
     FashionComponent,
     ShowcaseComponent,
-    AdvertiseComponent
+    AdvertiseComponent,
+    BrandsComponent,
+    ElectronicsComponent
   ],
   imports: [
     BrowserModule,
@@ -47,7 +51,11 @@ import { AdvertiseComponent } from './help/advertise/advertise.component';
     FlexLayoutModule,
     RouterModule.forRoot([
       { path: '', component: HomeComponent },
-      { path: 'market/fashions/:id', component: ShowcaseComponent},
+      { path: 'market/fashions/:id', component: ShowcaseComponent },
+      { path: 'market/brands/:id', component: ShowcaseComponent },
+      { path: 'market/electronics/:id', component: ShowcaseComponent },
+      { path: 'market/electronics', component: ElectronicsComponent },
+      { path: 'market/brands', component: BrandsComponent },
      { path: 'market/fashions', component: FashionComponent  },
       { path: 'market', component: MarketComponent },
       { path: 'directory', component: DirectoryComponent },
