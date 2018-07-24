@@ -45,9 +45,9 @@ mat-icon {
 .phone {
     margin-bottom: 0;
 }
-.phone span {
+.phone span, .email span {
     font-size: 20px;
 }
-.phone mat-icon {
+.phone mat-icon, .email mat-icon {
     font-size: 20px;
 }
