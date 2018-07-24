@@ -1,5 +1,5 @@
 #dtoolbar {
-    height: 110px;
+    height: 90px;
 }
 
 #bizlayout {
@@ -62,8 +62,6 @@
 
 .mat-grid-tile {
     background: lightblue;
-    height: 30px;
-    width: 30px
 }
 
 #matgrid {
@@ -71,4 +69,8 @@
     padding: 20px;
     margin: 20px;
     max-height: 300px
+}
+
+.leftrow {
+    margin-bottom: 200px
 }

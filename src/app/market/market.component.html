@@ -1,34 +1,99 @@
-<!--navigation menu-->
+<!-- <div class="container"
+     fxLayout
+     fxLayout.xs="row"
+     fxLayoutAlign="center"
+     fxLayoutGap="10px"
+     fxLayoutGap.xs="0">
+      <div class="item item-1" fxFlex="15%">Item 1</div>
+      <div class="item item-2" fxFlex="20%" fxFlexOrder="3">Item 2</div>
+      <div class="item item-3" fxFlex>Item 3</div>
+</div> -->
+
 <div class="container">
-  <div class="row">
-      <div class="col">first item</div>
-      <div class="col">Second item</div>
-      <div class="col">Third item</div>
-      <div class="col">Fourth item</div>
-      <div class="col">Fifth item</div>
-      <div class="col">Sixth item</div>
-  </div>
-
-  <div class="row">
-    <div class="col-sm-10">
-        <a href="//www.smearena.com.ng/shopping/collection/topfashion-17" >
-          <img src="//gastsmearena.akamaized.net/a2a527bb-a4a0-4038-8ca1-758733399316" class="expand-me padding-bottom-0"></a>
-
-    </div>
-    <div class="col-sm-2">
-        <a href="http://www.smearena.com.ng/shopping/help/trade-with-confidence">
-          <img src="https://gastsmearena.akamaized.net/e7a310df-8dd5-4064-a82d-d5deba01f149" class="expand-me padding-bottom-10">
-        </a>
-        <a href="http://www.smearena.com.ng/shopping/help/shipping">
-          <img src="https://gastsmearena.akamaized.net/4cff72ab-b9c0-404b-a0b8-7008ee983f45" class="expand-me padding-bottom-10">
-        </a>
-        <a href="/shopping/merchant-signup">
-          <img src="https://gastsmearena.akamaized.net/2622955c-158b-4118-9d17-ad4484eaea73" class="expand-me">
-        </a>
-    </div>
-  </div>
-
-
-
+    <ul class="prod-navigation" fxHide.xs fxLayout.xs="column" fxFlexAlign="center">
+      <li class="item" fxFlex="16.6%">first item</li>
+      <li class="item" fxFlex="16.6%">second item</li>
+      <li class="item" fxFlex="16.6%">third item</li>
+      <li class="item" fxFlex="16.6%">fourth item</li>
+      <li class="item" fxFlex="16.6%">fifth item</li>
+      <li class="item" fxFlex="16.6%">sixth item</li>
+    </ul>
 </div>
-<!--end of container-->
+<!-- end of navigatiion -->
+
+<div class="container"
+     fxLayout
+     fxLayout.xs="column">
+      <div class="item item-4" fxFlex="70%" >
+            <div>
+                <a href="#" >
+                  <img src="//gastsmearena.akamaized.net/a13238f9-5b84-41e5-9175-29b75177cefe"  class="expand-me padding-bottom-10">
+                </a>
+            </div>
+            <div fxLayout.xs="column" fxLayout="row">
+              <span fxFlex="325.5">
+                <a href="#" >
+                  <img src="https://gastsmearena.akamaized.net/93dc0488-ab76-4a38-9306-ccd853ee909c" class="expand-me">
+                </a>
+              </span>
+              
+              <span fxFlex="325.5">
+                <a href="#" >
+                  <img src="https://gastsmearena.akamaized.net/504e327f-04fd-475e-b61c-8880b96349de" class="expand-me">
+                </a>
+              </span>
+            </div>
+           
+    </div>
+      <div class="item item-5" fxFlex="30%">
+        <div>
+          <a href="#">
+            <img src="https://gastsmearena.akamaized.net/e7a310df-8dd5-4064-a82d-d5deba01f149" style="width: 332px; height: 101px;" class="expand-me padding-bottom-10">
+          </a>
+        </div>
+
+        <div >
+            <a href="#">
+              <img src="https://gastsmearena.akamaized.net/4cff72ab-b9c0-404b-a0b8-7008ee983f45"style="width: 332px; height: 101px;" class="expand-me padding-bottom-10">
+            </a>
+        </div>
+        <div>
+           <a href="#">
+              <img src="https://gastsmearena.akamaized.net/2622955c-158b-4118-9d17-ad4484eaea73"  style="width: 332px; height: 169px;" class="expand-me">
+           </a>
+        </div>
+          
+      </div>
+</div>
+<!-- end of slider navigation -->
+
+
+<!-- Product display -->
+<div style="margin-top:16px;" class="container" fxLayout="column">
+    <div class="header-title" fxFlex="100%" fxFlexFill>
+      <span>Top Fashion</span> 
+    </div>
+
+      <div class="prod-item" fxFlex="100%">
+            <div class="prod-left-nav">
+            </div>
+
+            <div class="prod-display">
+              <!-- <ul class="product-wrapper">
+                <li></li>
+              </ul> -->
+              <mat-grid-list cols="2" rowHeight="2:1">
+                  <mat-grid-tile>1</mat-grid-tile>
+                  <mat-grid-tile>2</mat-grid-tile>
+                  <mat-grid-tile>3</mat-grid-tile>
+                  <mat-grid-tile>4</mat-grid-tile>
+                </mat-grid-list>
+            </div>
+
+            <div class="prod-right-nav">
+            </div>
+        
+      </div>
+
+          <span class="product-see-more"><a href="#"> see more</a></span> 
+</div>
