@@ -1,19 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 
 @import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
-.example-form {
-    min-width: 150px;
-    max-width: 500px;
-    width: 100%;
-}
-
-.example-full-width {
-    width: 100%;
-}
-
-.padding-bottom-10 {
-    padding-bottom: 10px!important;
-}
 
 a {
     cursor: pointer;
@@ -36,9 +23,6 @@ mat-sidenav.hide {
     color: inherit;
 }
 
-.slider-bottom {
-    width: 294px;
-}
 
 /** colors **/
 .bgr-primary {
