@@ -21,6 +21,8 @@ import { AdvertiseComponent } from './help/advertise/advertise.component';
 import { BrandsComponent } from './market/brands/brands.component';
 import { ElectronicsComponent } from './market/electronics/electronics.component';
 import { AboutComponent } from './help/about/about.component';
+import { LoginComponent } from './login/login.component';
+import { SignupComponent } from './signup/signup.component';
 
 
 @NgModule({
@@ -40,7 +42,9 @@ import { AboutComponent } from './help/about/about.component';
     AdvertiseComponent,
     BrandsComponent,
     ElectronicsComponent,
-    AboutComponent
+    AboutComponent,
+    LoginComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,
@@ -61,8 +65,10 @@ import { AboutComponent } from './help/about/about.component';
      { path: 'market/fashions', component: FashionComponent  },
       { path: 'market', component: MarketComponent },
       { path: 'directory', component: DirectoryComponent },
+      { path: 'login', component: LoginComponent },
+      { path: 'sign-up', component: SignupComponent },
       { path: 'help/contact-us', component: ContactComponent },
-      { path: 'help/advertise', component: AdvertiseComponent }
+      { path: 'help/advertise', component: AdvertiseComponent },
       { path: 'help/about-us', component: AboutComponent }
      ])
   ],
