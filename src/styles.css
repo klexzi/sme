@@ -1,6 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
 
-@import "https://fonts.googleapis.com/icon?family=Material+Icons";
 @import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
 .example-form {
     min-width: 150px;
@@ -37,80 +36,7 @@ mat-sidenav.hide {
     color: inherit;
 }
 
-
-/* market place navigation stylesheet */
-.prod-navigation {
-    list-style: none;
-    padding-top: 2px;
-    padding-bottom: 2px;
-    border-color: #e8e5e5;
-    border-style: solid;
-    border-width: 1px 0; 
-}
-.prod-navigation:first-child {
-    padding-left: 0;
-}
-.prod-navigation li {
-    padding-left: 10px;
-    padding-right: 10px;
-    text-align: center;
-    color: #424243;
+.slider-bottom {
+    width: 294px;
 }
 
-.header-title {
-    text-align: left;
-    font-size: x-large;
-    font-weight: 300;
-    color: #424243;
-}
-
-.product-see-more{
-    text-align: right;
-    font-size: large;
-    font-weight: 300;
-   
-}
-.product-see-more a {
-    text-decoration: none;
-    color: #DF3847;
-}
-.product-see-more a:hover {
-    color: #424243;
-}
-
-.prod-item {
-    height: 100%;
-    padding-left: 22px;
-    padding-right: 22px;
-    position: relative;
-}
-
-.prod-left-nav {
-    width: 40px;
-    position: absolute;
-    left: 0;
-    background: #DF3847;
-    height: 100%;
-    display: inline-block;
-}
-.prod-right-nav {
-    width: 40px;
-    position: absolute;
-    right: 0;
-    background: #DF3847;
-    height: 100%;
-    display: inline-block;
-}
-
-.prod-display {
-    height: 100%;
-    display: inline-block;
-}
-
-.product-wrapper {
-    display: inline-block;
-    width: 100%;
-    padding-left: 25px;
-    padding-right: 5px;
-    position: relative;
-}

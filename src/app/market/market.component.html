@@ -11,89 +11,193 @@
 
 <div class="container">
     <ul class="prod-navigation" fxHide.xs fxLayout.xs="column" fxFlexAlign="center">
-      <li class="item" fxFlex="16.6%">first item</li>
-      <li class="item" fxFlex="16.6%">second item</li>
-      <li class="item" fxFlex="16.6%">third item</li>
-      <li class="item" fxFlex="16.6%">fourth item</li>
-      <li class="item" fxFlex="16.6%">fifth item</li>
-      <li class="item" fxFlex="16.6%">sixth item</li>
+        <li class="item" fxFlex="16.6%">first item</li>
+        <li class="item" fxFlex="16.6%">second item</li>
+        <li class="item" fxFlex="16.6%">third item</li>
+        <li class="item" fxFlex="16.6%">fourth item</li>
+        <li class="item" fxFlex="16.6%">fifth item</li>
+        <li class="item" fxFlex="16.6%">sixth item</li>
     </ul>
 </div>
 <!-- end of navigatiion -->
 
-<div class="container"
-     fxLayout
-     fxLayout.xs="column">
-      <div class="item item-4" fxFlex="70%" >
-            <div>
-                <a href="#" >
-                  <img src="//gastsmearena.akamaized.net/a13238f9-5b84-41e5-9175-29b75177cefe"  class="expand-me padding-bottom-10">
-                </a>
+<div class="container">
+    <div class="row">
+        <div class="col-md-9">
+            <div class="row padding-bottom-10">
+
+                <div id="myCarousel" class=" col-md-12 carousel slide" data-ride="carousel">
+
+                    <!-- Indicators -->
+                    <ul class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                    </ul>
+
+                    <!-- The slideshow -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="img-fluid" src="//gastsmearena.akamaized.net/a13238f9-5b84-41e5-9175-29b75177cefe" alt="Los Angeles" width="825" height="300">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="img-fluid" src="//gastsmearena.akamaized.net/a13238f9-5b84-41e5-9175-29b75177cefe" alt="Chicago" width="825" height="300">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="img-fluid" src="//gastsmearena.akamaized.net/a13238f9-5b84-41e5-9175-29b75177cefe" alt="New York" width="825" height="300">
+                        </div>
+                    </div>
+
+                    <!-- Left and right controls -->
+                    <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+                </div>
+
             </div>
-            <div fxLayout.xs="column" fxLayout="row">
-              <span fxFlex="325.5">
-                <a href="#" >
-                  <img src="https://gastsmearena.akamaized.net/93dc0488-ab76-4a38-9306-ccd853ee909c" class="expand-me">
-                </a>
-              </span>
-              
-              <span fxFlex="325.5">
-                <a href="#" >
-                  <img src="https://gastsmearena.akamaized.net/504e327f-04fd-475e-b61c-8880b96349de" class="expand-me">
-                </a>
-              </span>
+
+            <div class="row padding-bottom-10">
+                <div class="col-sm-6">
+                    <a href="#">
+                        <img src="https://gastsmearena.akamaized.net/93dc0488-ab76-4a38-9306-ccd853ee909c" style="height:90.99px; width:400px;" class="img-fluid">
+                    </a>
+                </div>
+                <div class="col-sm-6">
+                    <a href="#">
+                        <img src="https://gastsmearena.akamaized.net/504e327f-04fd-475e-b61c-8880b96349de" style=" height:90.99px; width:400px;" class="img-fluid">
+                    </a>
+                </div>
+
             </div>
-           
-    </div>
-      <div class="item item-5" fxFlex="30%">
-        <div>
-          <a href="#">
-            <img src="https://gastsmearena.akamaized.net/e7a310df-8dd5-4064-a82d-d5deba01f149" style="width: 332px; height: 101px;" class="expand-me padding-bottom-10">
-          </a>
+
         </div>
 
-        <div >
-            <a href="#">
-              <img src="https://gastsmearena.akamaized.net/4cff72ab-b9c0-404b-a0b8-7008ee983f45"style="width: 332px; height: 101px;" class="expand-me padding-bottom-10">
-            </a>
+        <!--Slider Aside -->
+        <div class="col-md-3 ">
+            <div class="row">
+                <div class="col-md-12">
+                    <a href="#">
+                        <img src="https://gastsmearena.akamaized.net/e7a310df-8dd5-4064-a82d-d5deba01f149" style="width: 332px; height: 101px;" class="img-fluid expand-me padding-bottom-10">
+                    </a>
+                </div>
+                <div class="col-md-12">
+                    <a href="#">
+                        <img src="https://gastsmearena.akamaized.net/4cff72ab-b9c0-404b-a0b8-7008ee983f45" style="width: 332px; height: 101px;" class="img-fluid expand-me padding-bottom-10">
+                    </a>
+                </div>
+
+                <div class="col-md-12">
+                    <a href="#">
+                        <img src="https://gastsmearena.akamaized.net/2622955c-158b-4118-9d17-ad4484eaea73" style="width: 332px; height: 193px;" class="img-fluid expand-me">
+                    </a>
+                </div>
+
+
+            </div>
+            <!-- end of row-->
+
         </div>
-        <div>
-           <a href="#">
-              <img src="https://gastsmearena.akamaized.net/2622955c-158b-4118-9d17-ad4484eaea73"  style="width: 332px; height: 169px;" class="expand-me">
-           </a>
-        </div>
-          
-      </div>
+        <!--end of col md 3-->
+    </div>
+
 </div>
 <!-- end of slider navigation -->
 
 
 <!-- Product display -->
-<div style="margin-top:16px;" class="container" fxLayout="column">
-    <div class="header-title" fxFlex="100%" fxFlexFill>
-      <span>Top Fashion</span> 
+<div style="margin-top:16px;" class="container">
+    <div class="row">
+        <div class="header-title col-md-12">
+            <span>Top Fashion</span>
+        </div>
+
+        <div class="prod-item col-md-12">
+            <div class="row">
+                <span class="prod-left-nav">
+                                                 </span>
+                <!--product display-->
+                <div [routerLink]="['/product/fashion','id']" class="col-md-3 col-sm-6 prod-display">
+                    <img ng-src="https://gastsmearena.akamaized.net/f5815df3-8372-41ee-9de9-e4ce7d2c16e1_200" class="product img-fluid" src="https://gastsmearena.akamaized.net/f5815df3-8372-41ee-9de9-e4ce7d2c16e1_200">
+                    <div class="columns small-12 text-center">
+                        <div class="title">Nigeria Super Eagles Dri Fit 18/2019 Home Away Jersey</div>
+                        <div class="price"> <span>₦ 8,000.00 </span></div>
+                        <div star-count="0" class="rating ui-display-stars">
+                            <div class="star-icons"> </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 prod-display">
+                    <img ng-src="https://gastsmearena.akamaized.net/f5815df3-8372-41ee-9de9-e4ce7d2c16e1_200" class="product img-fluid" src="https://gastsmearena.akamaized.net/f5815df3-8372-41ee-9de9-e4ce7d2c16e1_200">
+                </div>
+                <div class="col-md-3 col-sm-6 prod-display">
+                    <img ng-src="https://gastsmearena.akamaized.net/f5815df3-8372-41ee-9de9-e4ce7d2c16e1_200" class="product img-fluid" src="https://gastsmearena.akamaized.net/f5815df3-8372-41ee-9de9-e4ce7d2c16e1_200">
+                </div>
+                <div class="col-md-3 col-sm-6 prod-display">
+                    <img ng-src="https://gastsmearena.akamaized.net/f5815df3-8372-41ee-9de9-e4ce7d2c16e1_200" class="product img-fluid" src="https://gastsmearena.akamaized.net/f5815df3-8372-41ee-9de9-e4ce7d2c16e1_200">
+                </div>
+
+                <span class="prod-right-nav">
+                                                  </span>
+
+
+
+            </div>
+
+        </div>
+
     </div>
+    <!--end of row-->
+    <span class="product-see-more"><a routerLink = "/fashion" > see more</a></span>
+    <p style="clear: both;"></p>
+</div>
 
-      <div class="prod-item" fxFlex="100%">
-            <div class="prod-left-nav">
+
+<div style="margin-top:16px;" class="container">
+    <div class="row">
+        <div class="header-title col-md-12">
+            <span>Top Brand</span>
+        </div>
+
+        <div class="prod-item col-md-12">
+            <div class="row">
+                <span class="prod-left-nav">
+                                             </span>
+                <!--product display-->
+                <div [routerLink]="['/product/brand','id']" class="col-md-3 col-sm-6 prod-display">
+                    <img class="product img-fluid" src="https://gastsmearena.akamaized.net/230cd543-efa0-43e8-988f-a4fdd16dc36c_200">
+
+                    <div class="columns small-12 text-center">
+                        <div class="title">Iphone 8</div>
+                        <div class="price"> <span>₦ 8,000.00 </span></div>
+                        <div star-count="0" class="rating ui-display-stars">
+                            <div class="star-icons"> </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 prod-display">
+                    <img class="product img-fluid" src="https://gastsmearena.akamaized.net/230cd543-efa0-43e8-988f-a4fdd16dc36c_200">
+                </div>
+                <div class="col-md-3 col-sm-6 prod-display">
+                    <img class="product img-fluid" src="https://gastsmearena.akamaized.net/230cd543-efa0-43e8-988f-a4fdd16dc36c_200">
+                </div>
+                <div class="col-md-3 col-sm-6 prod-display">
+                    <img class="product img-fluid" src="https://gastsmearena.akamaized.net/230cd543-efa0-43e8-988f-a4fdd16dc36c_200">
+                </div>
+
+                <span class="prod-right-nav">
+                                              </span>
+
+
+
             </div>
 
-            <div class="prod-display">
-              <!-- <ul class="product-wrapper">
-                <li></li>
-              </ul> -->
-              <mat-grid-list cols="2" rowHeight="2:1">
-                  <mat-grid-tile>1</mat-grid-tile>
-                  <mat-grid-tile>2</mat-grid-tile>
-                  <mat-grid-tile>3</mat-grid-tile>
-                  <mat-grid-tile>4</mat-grid-tile>
-                </mat-grid-list>
-            </div>
+        </div>
 
-            <div class="prod-right-nav">
-            </div>
-        
-      </div>
-
-          <span class="product-see-more"><a href="#"> see more</a></span> 
+    </div>
+    <!--end of row-->
+    <span class="product-see-more"><a href="#"> see more</a></span>
+    <p style="clear: both;"></p>
 </div>

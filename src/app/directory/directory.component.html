@@ -30,20 +30,23 @@
         <div fxLayout="row-reverse" fxLayoutAlign="start start" fxLayoutGap="10px">
             <h3 fxFlexOffset="130px" fxFlex="100%"><strong>Tob Brands</strong></h3>
         </div>
-        <mat-grid-list fxLayout [responsiveCols]="{xs: 4, sm: 4, md: 4, lg: 4, xl: 6}" class="container">
+        <mat-grid-list fxLayout fxLayoutGap [responsiveCols]="{xs: 4, sm: 4, md: 4, lg: 4, xl: 6}" class="container">
 
-            <mat-grid-tile fxFlex>1</mat-grid-tile>
-            <mat-grid-tile>2</mat-grid-tile>
-            <mat-grid-tile>3</mat-grid-tile>
-            <mat-grid-tile>4</mat-grid-tile>
-            <mat-grid-tile>5</mat-grid-tile>
-            <mat-grid-tile>6</mat-grid-tile>
-            <mat-grid-tile>7</mat-grid-tile>
-            <mat-grid-tile>8</mat-grid-tile>
-            <mat-grid-tile>5</mat-grid-tile>
-            <mat-grid-tile>6</mat-grid-tile>
-            <mat-grid-tile>7</mat-grid-tile>
-            <mat-grid-tile>8</mat-grid-tile>
+
+            <mat-grid-tile id="mattile">
+                <a routerLink="/merchant/profile" [queryParams]="{name:name}">1</a>
+            </mat-grid-tile>
+            <mat-grid-tile id="mattile">2</mat-grid-tile>
+            <mat-grid-tile id="mattile">3</mat-grid-tile>
+            <mat-grid-tile id="mattile">4</mat-grid-tile>
+            <mat-grid-tile id="mattile">5</mat-grid-tile>
+            <mat-grid-tile id="mattile">6</mat-grid-tile>
+            <mat-grid-tile id="mattile">7</mat-grid-tile>
+            <mat-grid-tile id="mattile">8</mat-grid-tile>
+            <mat-grid-tile id="mattile">5</mat-grid-tile>
+            <mat-grid-tile id="mattile">6</mat-grid-tile>
+            <mat-grid-tile id="mattile">7</mat-grid-tile>
+            <mat-grid-tile id="mattile">8</mat-grid-tile>
 
 
 
@@ -53,7 +56,7 @@
 
 
 
-    <mat-divider [vertical]="true "></mat-divider>
+    <mat-divider class="divider" [vertical]="true "></mat-divider>
     <div fxFlex="50% ">
 
         <div fxLayout="row-reverse" fxLayoutAlign="start start" fxLayoutGap="10px">
