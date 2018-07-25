@@ -19,6 +19,7 @@ import { ShowcaseComponent } from './market/showcase/showcase.component';
 import { MerchantComponent } from './directory/merchant/merchant.component';
 import { BrandsComponent } from './market/brands/brands.component';
 import { ElectronicsComponent } from './market/electronics/electronics.component';
+import { HotprodcutComponent } from './market/hotprodcut/hotprodcut.component';
 
 
 @NgModule({
@@ -36,7 +37,8 @@ import { ElectronicsComponent } from './market/electronics/electronics.component
     FashionComponent,
     ShowcaseComponent,
     BrandsComponent,
-    ElectronicsComponent
+    ElectronicsComponent,
+    HotprodcutComponent
   ],
   imports: [
     BrowserModule,

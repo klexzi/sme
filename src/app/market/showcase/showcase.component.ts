@@ -1,6 +1,7 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import {  ActivatedRoute } from '@angular/router';
 
+
 @Component({
   selector: 'app-showcase',
   templateUrl: './showcase.component.html',
@@ -8,11 +9,12 @@ import {  ActivatedRoute } from '@angular/router';
 })
 export class ShowcaseComponent implements OnInit, OnDestroy {
     productId: any;
+    params: any;
   constructor(private route: ActivatedRoute) { }
 
   ngOnInit() {
     // get the product id on init and pull out contents from the server
-    this.route.paramMap.subscribe(data => {
+   this.params = this.route.paramMap.subscribe(data => {
        console.log (data.get('id'));
     });
 
@@ -20,7 +22,7 @@ export class ShowcaseComponent implements OnInit, OnDestroy {
   }
 
   ngOnDestroy(): void {
- 
+    this.params.unsubscribe();
   }
 
 }
