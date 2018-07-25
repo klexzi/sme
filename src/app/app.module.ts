@@ -20,6 +20,7 @@ import { MerchantComponent } from './directory/merchant/merchant.component';
 import { AdvertiseComponent } from './help/advertise/advertise.component';
 import { BrandsComponent } from './market/brands/brands.component';
 import { ElectronicsComponent } from './market/electronics/electronics.component';
+import { AboutComponent } from './help/about/about.component';
 
 
 @NgModule({
@@ -38,7 +39,8 @@ import { ElectronicsComponent } from './market/electronics/electronics.component
     ShowcaseComponent,
     AdvertiseComponent,
     BrandsComponent,
-    ElectronicsComponent
+    ElectronicsComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
@@ -61,6 +63,7 @@ import { ElectronicsComponent } from './market/electronics/electronics.component
       { path: 'directory', component: DirectoryComponent },
       { path: 'help/contact-us', component: ContactComponent },
       { path: 'help/advertise', component: AdvertiseComponent }
+      { path: 'help/about-us', component: AboutComponent }
      ])
   ],
   providers: [],
