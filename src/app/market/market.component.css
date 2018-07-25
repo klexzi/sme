@@ -1,5 +1,5 @@
 /* market place navigation stylesheet */
-.example-form {
+/* .example-form {
     min-width: 150px;
     max-width: 500px;
     width: 100%;
@@ -7,7 +7,7 @@
 
 .example-full-width {
     width: 100%;
-}
+} */
 
 
 .slider-bottom {
@@ -89,6 +89,9 @@
 .prod-display {
     height: 100%;
     display: inline-block;
+}
+.prod-display:hover {
+    cursor: pointer;
 }
 
 .product-wrapper {

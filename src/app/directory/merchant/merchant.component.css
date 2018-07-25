@@ -1,0 +1,91 @@
+#lay {
+    margin-left: 420px;
+}
+
+#contactcard {
+    padding: 10px
+}
+
+#merchant {
+    margin-left: 50px
+}
+
+.message {
+    width: 100%;
+}
+
+#icon2 {
+    margin-right: 20px
+}
+
+.prod-navigation {
+    list-style: none;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-color: #e8e5e5;
+    border-style: solid;
+    border-width: 1px 0;
+}
+
+.prod-navigation li {
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    color: #424243;
+}
+
+.prod-navigation:first-child {
+    padding-left: 0;
+}
+
+.prod-right-nav {
+    width: 40px;
+    position: absolute;
+    right: 0;
+    background: #DF3847;
+    height: 100%;
+    display: inline-block;
+    z-index: 4;
+}
+
+.prod-left-nav {
+    width: 40px;
+    position: absolute;
+    left: 0;
+    background: #DF3847;
+    height: 100%;
+    display: inline-block;
+    z-index: 4;
+}
+
+.prod-item {
+    height: 100%;
+    padding-left: 22px;
+    padding-right: 22px;
+    position: relative;
+}
+
+.product-wrapper {
+    display: inline-block;
+    width: 100%;
+    padding-left: 25px;
+    padding-right: 5px;
+    position: relative;
+}
+
+.example-header-image {
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+}
+
+.merchantcard {
+    width: auto;
+    height: 1000px;
+}
+
+.example-header-image {
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: 300px;
+    width: 100px;
+    height: px
+}
