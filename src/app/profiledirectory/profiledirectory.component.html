@@ -7,26 +7,40 @@
 <div fxLayout="row" fxLayout.xs="column" id="merchant">
     <div fxFlex fxFlexOffset="10px" id="contactcard">
         <br/>
-        <h3><strong>A and Z Enterprises</strong></h3>
-        <div>
-            <mat-icon routerLink="/merchant">account_balance</mat-icon> &nbsp;&nbsp; 64, Abusi Edummare Street Ipaja Lagos
 
-        </div>
-        <br/>
-        <div>
-            <span><mat-icon>contact_phone</mat-icon> &nbsp;&nbsp;  08095998116</span>
-            <!-- <button mat-raised-button color="primary"><mat-icon id="icon2">shopping_cart</mat-icon>visit our store</button> -->
+        <mat-card class="merchantcard">
+            <mat-card-header>
+                <div mat-card-avatar class="example-header-image"></div>
+                <mat-card-title>ino Phones</mat-card-title>
+                <mat-card-subtitle>Rating</mat-card-subtitle>
+            </mat-card-header>
+            <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+            <mat-card-content>
 
-        </div>
-        <div>
-            <span> <mat-icon>email</mat-icon> &nbsp;&nbsp;eniwsnc@gmail.com</span>
-        </div>
-        <div>
-            <img src="http://maps.googleapis.com/maps/api/staticmap?key=AIzaSyDNAZNr8Cc-dIyGFILjnPvQfIlgcZr_Jxo&center=89%2C%20OPEBI%20ROAD%2C%20IKEJA.%2C%20IKEJA%2C%20Nigeria%20100281&zoom=12&scale=false&size=600x300&maptype=roadmap&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0xff0000%7Clabel:1%7C89%2C%20OPEBI%20ROAD%2C%20IKEJA.%2C%20IKEJA%2C%20Nigeria%20100281http://maps.googleapis.com/maps/api/staticmap?key=AIzaSyDNAZNr8Cc-dIyGFILjnPvQfIlgcZr_Jxo&center=89%2C%20OPEBI%20ROAD%2C%20IKEJA.%2C%20IKEJA%2C%20Nigeria%20100281&zoom=12&scale=false&size=600x300&maptype=roadmap&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0xff0000%7Clabel:1%7C89%2C%20OPEBI%20ROAD%2C%20IKEJA.%2C%20IKEJA%2C%20Nigeria%20100281"
-                alt="">
-        </div>
-        <div> <button [class.active]="view=='1'" (click)="view='1'" mat-raised-button color="primary"><mat-icon id="icon2">shopping_cart</mat-icon>Our Products</button> &nbsp; &nbsp; <button [class.active]="view=='2'" (click)="view='2'" mat-raised-button color="primary"><mat-icon id="icon2">location_on</mat-icon>Find us</button></div>
+                <h3><strong>A and Z Enterprises</strong></h3>
+                <div>
+                    <mat-icon routerLink="/merchant">account_balance</mat-icon> &nbsp;&nbsp; 64, Abusi Edummare Street Ipaja Lagos
 
+                </div>
+                <br/>
+                <div>
+                    <span><mat-icon>contact_phone</mat-icon> &nbsp;&nbsp;  08095998116</span>
+                    <!-- <button mat-raised-button color="primary"><mat-icon id="icon2">shopping_cart</mat-icon>visit our store</button> -->
+
+                </div>
+                <div>
+                    <span> <mat-icon>email</mat-icon> &nbsp;&nbsp;eniwsnc@gmail.com</span>
+                </div>
+                <div>
+                    <img src="http://maps.googleapis.com/maps/api/staticmap?key=AIzaSyDNAZNr8Cc-dIyGFILjnPvQfIlgcZr_Jxo&center=89%2C%20OPEBI%20ROAD%2C%20IKEJA.%2C%20IKEJA%2C%20Nigeria%20100281&zoom=12&scale=false&size=600x300&maptype=roadmap&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0xff0000%7Clabel:1%7C89%2C%20OPEBI%20ROAD%2C%20IKEJA.%2C%20IKEJA%2C%20Nigeria%20100281http://maps.googleapis.com/maps/api/staticmap?key=AIzaSyDNAZNr8Cc-dIyGFILjnPvQfIlgcZr_Jxo&center=89%2C%20OPEBI%20ROAD%2C%20IKEJA.%2C%20IKEJA%2C%20Nigeria%20100281&zoom=12&scale=false&size=600x300&maptype=roadmap&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0xff0000%7Clabel:1%7C89%2C%20OPEBI%20ROAD%2C%20IKEJA.%2C%20IKEJA%2C%20Nigeria%20100281"
+                        alt="">
+                </div>
+                <div> <button [class.active]="view=='1'" (click)="view='1'" mat-raised-button color="primary"><mat-icon id="icon2">shopping_cart</mat-icon>Our Products</button> &nbsp; &nbsp; <button [class.active]="view=='2'" (click)="view='2'" mat-raised-button
+                        color="primary"><mat-icon id="icon2">location_on</mat-icon>Find us</button></div>
+
+            </mat-card-content>
+
+        </mat-card>
 
     </div>
 
@@ -62,8 +76,15 @@
                         <div class="title">Iphone 8</div>
                         <div class="price"> <span>₦ 8,000.00 </span></div>
                         <div star-count="0" class="rating ui-display-stars">
-                            <div class="star-icons"> </div>
+                            <div class="star-icons">
+                                <mat-icon>star</mat-icon>
+                                <mat-icon>star</mat-icon>
+                                <mat-icon>star</mat-icon>
+                                <mat-icon>star</mat-icon>
+                                <mat-icon>star</mat-icon>
+                            </div>
                         </div>
+
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-6 prod-display">

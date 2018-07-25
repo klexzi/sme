@@ -13,9 +13,10 @@ import { Component, OnInit } from '@angular/core';
 
 
 export class ProfiledirectoryComponent implements OnInit {
-  view = "1" 
+  view = "1" ;
+  starList: boolean[] = [true,true,true,true,true]; 
   constructor(private route: ActivatedRoute ) { }
-
+  
   ngOnInit() {
     this.route.paramMap.subscribe(
       params=> {

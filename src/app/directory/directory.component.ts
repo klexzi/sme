@@ -19,11 +19,7 @@ export class DirectoryComponent implements OnInit {
   ngOnInit() {
 
     
-    this.route.paramMap.subscribe(
-      params=> {
-      let merchantname = params.get('name');
-      console.log(merchantname);
-    } )  
+  
   }
 
 }

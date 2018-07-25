@@ -7,7 +7,7 @@
 }
 
 #bizlayout {
-    height: 700px;
+    height: 650px;
     margin-bottom: 30px;
     padding: 20px
 }
@@ -65,7 +65,7 @@
 }
 
 .mat-grid-tile {
-    background: lightblue;
+    /* background: lightblue; */
 }
 
 #matgrid {
