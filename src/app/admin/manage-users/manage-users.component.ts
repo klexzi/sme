@@ -39,6 +39,7 @@ export class ManageUsersComponent implements OnInit {
 export class BlockDialogComponent {
   constructor() {}
   block(key) {
+    // Block the user using the key as id
     console.log(key);
   }
 }
