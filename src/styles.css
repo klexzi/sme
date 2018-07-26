@@ -2,6 +2,9 @@
 
 @import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
 
+html, body {
+    font-family: 'Roboto';
+}
 a {
     cursor: pointer;
 }
@@ -26,7 +29,7 @@ mat-sidenav.hide {
 
 /** colors **/
 .bgr-primary {
-    background-color: #6f42c1;
+    background-color: #9c27b0;
 }
 .bgr-accent {
     background-color: #ffd740;
@@ -48,5 +51,5 @@ mat-sidenav.hide {
     padding-left: 10px;
     padding-right: 10px;
     text-align: center;
-    color: #424243;
+    color: #9c27b0;
 }
