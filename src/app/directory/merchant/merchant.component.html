@@ -1,113 +1,76 @@
-<div fxLayout style="height:400px; background-image: url(http://ictbrainchallenge.com/wp-content/uploads/2018/05/1-1024x256.jpg); background-size: cover; height: 135px;">
+<div fxLayout style="height:400px; background-image: url(http://ictbrainchallenge.com/wp-content/uploads/2018/05/1-1024x256.jpg); background-size: cover; height: 300px;">
     <span fxFlex="100%" fxFlexAlign="center" fxFlexAlign.end="center" fxFlexOffset="350px" fxFlexOffset.xs="40px" fxFlexOffset.sm="160px">  <input  color="warn" type="search" style=" height:50px; width:300px" placeholder="Find a merchant"> &nbsp; &nbsp;<button mat-raised-button color="warn" style=" height:50px; width:170px">Search</button></span>
 
+
 </div>
 
+<div fxLayout="row" fxLayoutAlign="start start" fxLayoutGap="10px">
+    <div fxFlex>
 
-<div fxLayout="row" fxLayout.xs="column" id="merchant">
-    <div fxFlex fxFlexOffset="10px" id="contactcard">
-        <br/>
 
-        <mat-card class="merchantcard">
-            <mat-card-header>
-                <div mat-card-avatar class="example-header-image"></div>
-                <mat-card-title>ino Phones</mat-card-title>
-                <mat-card-subtitle>Rating</mat-card-subtitle>
-            </mat-card-header>
-            <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
-            <mat-card-content>
 
-                <h3><strong>A and Z Enterprises</strong></h3>
-                <div>
-                    <mat-icon routerLink="/merchant">account_balance</mat-icon> &nbsp;&nbsp; 64, Abusi Edummare Street Ipaja Lagos
-
-                </div>
-                <br/>
-                <div>
-                    <span><mat-icon>contact_phone</mat-icon> &nbsp;&nbsp;  08095998116</span>
-                    <!-- <button mat-raised-button color="primary"><mat-icon id="icon2">shopping_cart</mat-icon>visit our store</button> -->
-
-                </div>
-                <div>
-                    <span> <mat-icon>email</mat-icon> &nbsp;&nbsp;eniwsnc@gmail.com</span>
-                </div>
-                <div>
-                    <img src="http://maps.googleapis.com/maps/api/staticmap?key=AIzaSyDNAZNr8Cc-dIyGFILjnPvQfIlgcZr_Jxo&center=89%2C%20OPEBI%20ROAD%2C%20IKEJA.%2C%20IKEJA%2C%20Nigeria%20100281&zoom=12&scale=false&size=600x300&maptype=roadmap&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0xff0000%7Clabel:1%7C89%2C%20OPEBI%20ROAD%2C%20IKEJA.%2C%20IKEJA%2C%20Nigeria%20100281http://maps.googleapis.com/maps/api/staticmap?key=AIzaSyDNAZNr8Cc-dIyGFILjnPvQfIlgcZr_Jxo&center=89%2C%20OPEBI%20ROAD%2C%20IKEJA.%2C%20IKEJA%2C%20Nigeria%20100281&zoom=12&scale=false&size=600x300&maptype=roadmap&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0xff0000%7Clabel:1%7C89%2C%20OPEBI%20ROAD%2C%20IKEJA.%2C%20IKEJA%2C%20Nigeria%20100281"
-                        alt="">
-                </div>
-                <div> <button [class.active]="view=='1'" (click)="view='1'" mat-raised-button color="primary"><mat-icon id="icon2">shopping_cart</mat-icon>Our Products</button> &nbsp; &nbsp; <button [class.active]="view=='2'" (click)="view='2'" mat-raised-button
-                        color="primary"><mat-icon id="icon2">location_on</mat-icon>Find us</button></div>
-
-            </mat-card-content>
-
-        </mat-card>
-
-    </div>
-
-    <div fxFlex="40%" fxFlexAlign="center">
-
-        <div [ngSwitch]="view">
-            <div *ngSwitchCase="'1'"> contact form</div>
-            <div *ngSwitchCase="'2'"> map</div>
-
-        </div>
     </div>
 
 
 </div>
 
-<!-- product show -->
-
-<div style="margin-top:16px;" class="container">
-    <div class="row">
-        <div class="header-title col-md-12">
-            <span>Top Brand</span>
-        </div>
-
-        <div class="prod-item col-md-12">
+<mat-tab-group mat-stretch-tabs>
+    <mat-tab label="Profile">
+        <app-contact-merchant></app-contact-merchant>
+    </mat-tab>
+    <mat-tab label="Top Products">
+        <div style="margin-top:16px;" class="container">
             <div class="row">
-                <span class="prod-left-nav">
-                                                 </span>
-                <!--product display-->
-                <div [routerLink]="['/product/brand','id']" class="col-md-3 col-sm-6 prod-display">
-                    <img class="product img-fluid" src="https://gastsmearena.akamaized.net/230cd543-efa0-43e8-988f-a4fdd16dc36c_200">
+                <div class="header-title col-md-12">
+                    <span>Top Products</span>
+                </div>
 
-                    <div class="columns small-12 text-center">
-                        <div class="title">Iphone 8</div>
-                        <div class="price"> <span>₦ 8,000.00 </span></div>
-                        <div star-count="0" class="rating ui-display-stars">
-                            <div class="star-icons">
-                                <mat-icon>star</mat-icon>
-                                <mat-icon>star</mat-icon>
-                                <mat-icon>star</mat-icon>
-                                <mat-icon>star</mat-icon>
-                                <mat-icon>star</mat-icon>
+                <div class="prod-item col-md-12">
+                    <div class="row">
+                        <span class="prod-left-nav">
+                                                         </span>
+                        <!--product display-->
+                        <div [routerLink]="['/products/electronics','id']" class="col-md-3 col-sm-6 prod-display">
+                            <img class="product img-fluid" src="https://gastsmearena.akamaized.net/230cd543-efa0-43e8-988f-a4fdd16dc36c_200">
+
+                            <div class="columns small-12 text-center">
+                                <div class="title">Iphone 8</div>
+                                <div class="price"> <span>₦ 8,000.00 </span></div>
+                                <div star-count="0" class="rating ui-display-stars">
+                                    <div class="star-icons">
+                                        <mat-icon>star</mat-icon>
+                                        <mat-icon>star</mat-icon>
+                                        <mat-icon>star</mat-icon>
+                                        <mat-icon>star</mat-icon>
+                                        <mat-icon>star</mat-icon>
+                                    </div>
+                                </div>
                             </div>
                         </div>
+                        <div class="col-md-3 col-sm-6 prod-display">
+                            <img class="product img-fluid" src="https://gastsmearena.akamaized.net/230cd543-efa0-43e8-988f-a4fdd16dc36c_200">
+                        </div>
+                        <div class="col-md-3 col-sm-6 prod-display">
+                            <img class="product img-fluid" src="https://gastsmearena.akamaized.net/230cd543-efa0-43e8-988f-a4fdd16dc36c_200">
+                        </div>
+                        <div class="col-md-3 col-sm-6 prod-display">
+                            <img class="product img-fluid" src="https://gastsmearena.akamaized.net/230cd543-efa0-43e8-988f-a4fdd16dc36c_200">
+                        </div>
+
+                        <span class="prod-right-nav">
+                                                          </span>
+
+
 
                     </div>
-                </div>
-                <div class="col-md-3 col-sm-6 prod-display">
-                    <img class="product img-fluid" src="https://gastsmearena.akamaized.net/230cd543-efa0-43e8-988f-a4fdd16dc36c_200">
-                </div>
-                <div class="col-md-3 col-sm-6 prod-display">
-                    <img class="product img-fluid" src="https://gastsmearena.akamaized.net/230cd543-efa0-43e8-988f-a4fdd16dc36c_200">
-                </div>
-                <div class="col-md-3 col-sm-6 prod-display">
-                    <img class="product img-fluid" src="https://gastsmearena.akamaized.net/230cd543-efa0-43e8-988f-a4fdd16dc36c_200">
-                </div>
 
-                <span class="prod-right-nav">
-                                                  </span>
-
-
+                </div>
 
             </div>
-
+            <!--end of row-->
+            <span class="product-see-more"><a routerLink="/merchant/store"> see more</a></span>
+            <p style="clear: both;"></p>
         </div>
+    </mat-tab>
 
-    </div>
-    <!--end of row-->
-    <span class="product-see-more"><a href="#"> see more</a></span>
-    <p style="clear: both;"></p>
-</div>
+</mat-tab-group>
