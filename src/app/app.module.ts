@@ -23,6 +23,9 @@ import { ElectronicsComponent } from './market/electronics/electronics.component
 import { AboutComponent } from './help/about/about.component';
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
+import { AdminComponent } from './admin/admin.component';
+import { ManageUsersComponent, BlockDialogComponent } from './admin/manage-users/manage-users.component';
+import { ManageMerchantsComponent, DeactivateDialogComponent } from './admin/manage-merchants/manage-merchants.component';
 
 
 @NgModule({
@@ -44,7 +47,12 @@ import { SignupComponent } from './signup/signup.component';
     ElectronicsComponent,
     AboutComponent,
     LoginComponent,
-    SignupComponent
+    SignupComponent,
+    AdminComponent,
+    ManageUsersComponent,
+    ManageMerchantsComponent,
+    BlockDialogComponent,
+    DeactivateDialogComponent,
   ],
   imports: [
     BrowserModule,
@@ -62,15 +70,20 @@ import { SignupComponent } from './signup/signup.component';
       { path: 'market/electronics/:id', component: ShowcaseComponent },
       { path: 'market/electronics', component: ElectronicsComponent },
       { path: 'market/brands', component: BrandsComponent },
-     { path: 'market/fashions', component: FashionComponent  },
+      { path: 'market/fashions', component: FashionComponent  },
       { path: 'market', component: MarketComponent },
       { path: 'directory', component: DirectoryComponent },
       { path: 'login', component: LoginComponent },
       { path: 'sign-up', component: SignupComponent },
       { path: 'help/contact-us', component: ContactComponent },
       { path: 'help/advertise', component: AdvertiseComponent },
-      { path: 'help/about-us', component: AboutComponent }
+      { path: 'help/about-us', component: AboutComponent },
+      { path: 'admin', component: AdminComponent },
      ])
+  ],
+  entryComponents: [
+    BlockDialogComponent,
+    DeactivateDialogComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
