@@ -23,6 +23,8 @@ import { ElectronicsComponent } from './market/electronics/electronics.component
 import { HotprodcutComponent } from './market/hotprodcut/hotprodcut.component';
 import { AboutComponent } from './help/about/about.component';
 import { UserComponent } from './user/user.component';
+import { LoginComponent } from './login/login.component';
+import { SignupComponent } from './signup/signup.component';
 
 
 @NgModule({
@@ -44,7 +46,10 @@ import { UserComponent } from './user/user.component';
     ElectronicsComponent,
     HotprodcutComponent,
     AboutComponent,
-    UserComponent
+    UserComponent,
+    AboutComponent,
+    LoginComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,
@@ -65,6 +70,8 @@ import { UserComponent } from './user/user.component';
      { path: 'market/fashions', component: FashionComponent  },
       { path: 'market', component: MarketComponent },
       { path: 'directory', component: DirectoryComponent },
+      { path: 'login', component: LoginComponent },
+      { path: 'signup', component: SignupComponent },
       { path: 'help/contact-us', component: ContactComponent },
       { path: 'help/advertise', component: AdvertiseComponent },
       { path: 'help/about-us', component: AboutComponent }

@@ -35,6 +35,7 @@ export class ContactComponent implements OnInit {
   }
   sendMail(form) {
     if (this.form.valid) {
+      // send the form object to the api endpoint to perform query
       console.log(form);
     }
 

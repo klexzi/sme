@@ -1,0 +1,61 @@
+<div class="container">
+  <div class="p-md-5 mx-auto">
+    <div class="row">
+      <div class="col-md-3"></div>
+      <div class="col-md-6">
+            <mat-card class="p-0">
+        <mat-toolbar color="accent" class="text-center p-4">
+            <h4 class="mat-headline">Login &nbsp; <i class="fa fa-lock"></i></h4>
+        </mat-toolbar>
+        <mat-card-content class="p-4">
+            <form [formGroup]="form" (ngSubmit)="login(form.value)">
+                <div class="form">
+                    <mat-form-field appearance="outline">
+                        <mat-label>Email</mat-label>
+                        <input
+                        matInput 
+                        name="email"
+                        type="text"
+                        formControlName="email"
+                        placeholder="Enter Your Email"
+                        maxlength="300" required>
+                        <mat-icon matSuffix>person</mat-icon>
+                        <mat-error> {{ getEmailError() }}</mat-error>
+                    </mat-form-field>
+                    <mat-form-field appearance="outline">
+                        <mat-label>Password</mat-label>
+                        <input
+                        matInput 
+                        name="password"
+                        [type]="type"
+                        formControlName="password" required>
+                        <i matSuffix mat-button (click)="visibilityToggle()" class="fa fa-eye-slash"></i>
+                        <mat-error> {{ getPasswordError() }} </mat-error>
+                    </mat-form-field>
+                    <mat-form-field appearance="outline">
+                        <mat-label>Login As</mat-label>
+                        <mat-select 
+                         placeholder="Login As"
+                         formControlName="loginType" required>
+                            <mat-option value="user">User</mat-option>
+                            <mat-option value="merchant">Merchant</mat-option>
+                              </mat-select>
+                    </mat-form-field>
+                    <button mat-raised-button color="accent" type="submit">Login</button>
+                </div>
+            </form>
+        </mat-card-content>
+        <mat-card-actions align="start">
+            <!-- <button mat-button (click)="onAction1">Action1</button>
+             -->
+        </mat-card-actions>
+        <mat-card-footer class="p-4">
+          <p class="text-center">Not registered? <a routerLink="/sign-up">Sign up now</a></p>
+        </mat-card-footer>
+    </mat-card>
+    <br/>
+      </div>
+    </div>
+
+  </div>
+</div>
