@@ -1,0 +1,72 @@
+<div class="container">
+    <ul class="prod-navigation" fxHide.xs fxLayout.xs="column" fxFlexAlign="center">
+        <li class="item" fxFlex="16.6%">first item</li>
+        <li class="item" fxFlex="16.6%">second item</li>
+        <li class="item" fxFlex="16.6%">third item</li>
+        <li class="item" fxFlex="16.6%">fourth item</li>
+        <li class="item" fxFlex="16.6%">fifth item</li>
+        <li class="item" fxFlex="16.6%">sixth item</li>
+    </ul>
+</div>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 ">
+            <nav class="breadcrumb">
+                <a class="breadcrumb-item" routerLink="/m">Kt Phones</a>
+                <a class="breadcrumb-item" routerLink="/merchant/store">Kt Phones Store</a>
+                <!--change this nav based on url-->
+                <li class="breadcrumb-item">Product name displays here</li>
+            </nav>
+        </div>
+    </div>
+</div>
+<!--End of Slider and Breadcrumbs-->
+
+
+<div class="container ">
+    <div class="row ">
+        <div class="col-md-12">
+            <div class="row breadcrumb mx-0">
+                <div class="col-sm-12 col-md-4">
+                    <img class="product img-fluid shadow" src="https://gastsmearena.akamaized.net/230cd543-efa0-43e8-988f-a4fdd16dc36c_200">
+                </div>
+
+                <div class="col-sm-12 col-md-8">
+                    <div class="star-icons px-2">
+                        <mat-icon>star</mat-icon>
+                        <mat-icon>star</mat-icon>
+                        <mat-icon>star</mat-icon>
+                        <mat-icon>star</mat-icon>
+                        <mat-icon>star</mat-icon>
+                    </div>
+                    <div class="name px-2"> Samsung J Boom </div>
+                    <div>
+                        <!-- ngIf: productOriginalPrice!=productFinalPrice -->
+                        <span class="price px-2">₦ 72,200.00</span>
+                        <span class="price strike">₦ 82,000.00</span></div>
+
+                    <div class="hlabel px-2">By:<a [routerLink]="['/merchant/']"><span class="slabel ">Kt phones</span></a></div>
+
+                    <!--Product Description-->
+                    <div class="prod-description-title px-2">Description</div>
+                    <div class="prod-description px-2">
+                        note: price quoted is for one phone. > phone is new and not refurbished
+                    </div>
+                    <div class="contact-info px-2">
+                        <P class="phone">
+                            <mat-icon>stay_primary_portrait</mat-icon><span>0808299999</span></P>
+                        <P class="phone">
+                            <mat-icon>stay_primary_portrait</mat-icon><span>0808299999</span></P>
+                        <p class="email">
+                            <mat-icon></mat-icon>
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

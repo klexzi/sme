@@ -1,5 +1,76 @@
-<div fxLayout style="height:400px; background-image: url(http://ictbrainchallenge.com/wp-content/uploads/2018/05/1-1024x256.jpg); background-size: cover; height: 135px;">
+<div fxLayout style="height:400px; background-image: url(http://ictbrainchallenge.com/wp-content/uploads/2018/05/1-1024x256.jpg); background-size: cover; height: 300px;">
     <span fxFlex="100%" fxFlexAlign="center" fxFlexAlign.end="center" fxFlexOffset="350px" fxFlexOffset.xs="40px" fxFlexOffset.sm="160px">  <input  color="warn" type="search" style=" height:50px; width:300px" placeholder="Find a merchant"> &nbsp; &nbsp;<button mat-raised-button color="warn" style=" height:50px; width:170px">Search</button></span>
 
 
 </div>
+
+<div fxLayout="row" fxLayoutAlign="start start" fxLayoutGap="10px">
+    <div fxFlex>
+
+
+
+    </div>
+
+
+</div>
+
+<mat-tab-group mat-stretch-tabs>
+    <mat-tab label="Profile">
+        <app-contact-merchant></app-contact-merchant>
+    </mat-tab>
+    <mat-tab label="Top Products">
+        <div style="margin-top:16px;" class="container">
+            <div class="row">
+                <div class="header-title col-md-12">
+                    <span>Top Products</span>
+                </div>
+
+                <div class="prod-item col-md-12">
+                    <div class="row">
+                        <span class="prod-left-nav">
+                                                         </span>
+                        <!--product display-->
+                        <div [routerLink]="['/products/electronics','id']" class="col-md-3 col-sm-6 prod-display">
+                            <img class="product img-fluid" src="https://gastsmearena.akamaized.net/230cd543-efa0-43e8-988f-a4fdd16dc36c_200">
+
+                            <div class="columns small-12 text-center">
+                                <div class="title">Iphone 8</div>
+                                <div class="price"> <span>₦ 8,000.00 </span></div>
+                                <div star-count="0" class="rating ui-display-stars">
+                                    <div class="star-icons">
+                                        <mat-icon>star</mat-icon>
+                                        <mat-icon>star</mat-icon>
+                                        <mat-icon>star</mat-icon>
+                                        <mat-icon>star</mat-icon>
+                                        <mat-icon>star</mat-icon>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 prod-display">
+                            <img class="product img-fluid" src="https://gastsmearena.akamaized.net/230cd543-efa0-43e8-988f-a4fdd16dc36c_200">
+                        </div>
+                        <div class="col-md-3 col-sm-6 prod-display">
+                            <img class="product img-fluid" src="https://gastsmearena.akamaized.net/230cd543-efa0-43e8-988f-a4fdd16dc36c_200">
+                        </div>
+                        <div class="col-md-3 col-sm-6 prod-display">
+                            <img class="product img-fluid" src="https://gastsmearena.akamaized.net/230cd543-efa0-43e8-988f-a4fdd16dc36c_200">
+                        </div>
+
+                        <span class="prod-right-nav">
+                                                          </span>
+
+
+
+                    </div>
+
+                </div>
+
+            </div>
+            <!--end of row-->
+            <span class="product-see-more"><a routerLink="/merchant/store"> see more</a></span>
+            <p style="clear: both;"></p>
+        </div>
+    </mat-tab>
+
+</mat-tab-group>

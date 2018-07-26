@@ -1,0 +1,96 @@
+#lay {
+    margin-left: 420px;
+}
+
+#contactcard {
+    padding: 10px
+}
+
+#merchant {
+    margin-left: 50px
+}
+
+.message {
+    width: 100%;
+}
+
+#icon2 {
+    margin-right: 20px
+}
+
+.prod-navigation {
+    list-style: none;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-color: #e8e5e5;
+    border-style: solid;
+    border-width: 1px 0;
+}
+
+.prod-navigation li {
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    color: #424243;
+}
+
+.prod-navigation:first-child {
+    padding-left: 0;
+}
+
+.prod-right-nav {
+    width: 40px;
+    position: absolute;
+    right: 0;
+    background: #DF3847;
+    height: 100%;
+    display: inline-block;
+    z-index: 4;
+}
+
+.prod-left-nav {
+    width: 40px;
+    position: absolute;
+    left: 0;
+    background: #DF3847;
+    height: 100%;
+    display: inline-block;
+    z-index: 4;
+}
+
+.prod-item {
+    height: 100%;
+    padding-left: 22px;
+    padding-right: 22px;
+    position: relative;
+}
+
+.product-wrapper {
+    display: inline-block;
+    width: 100%;
+    padding-left: 25px;
+    padding-right: 5px;
+    position: relative;
+}
+
+.example-header-image {
+    background-image: url('https://seeklogo.com/images/P/phone-logo-CA0ABEDEEB-seeklogo.com.png');
+    background-size: cover;
+}
+
+.merchantcard {
+    width: auto;
+    height: 1000px;
+}
+
+.example-header-image {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHwAAAB8CAMAAACcwCSMAAAAb1BMVEV/AH////95AHluAG759Pnv4e/x5/F8AHyBH4F1AHXp2On++/5/FH+KI4qDH4PKqsq3i7fZwtmpdam6lLqocaiJNYmdXZ327vaiZaKxgbHeyt6TTJPhz+HCmMKdV52NMo3KscqSRZLTuNPFocXUw9T07hoDAAADRUlEQVRoge3ba3OqMBAG4GRF1gDlUhRota29/P/fWFG8ZfMlGXlzZk73S6fTsY9AyGWTVfocedN2T2rmeOraJr+QavqZ1gURz20rxURFnd7jVUnzw+egsrrF1wZHj2HWV3wA2wd9OOPo6z7q6xNeRbAPejXiaRnDVqpMD3gd2s759EG6hN/HqdYqLwJl6uqxXzDVFPuW/fqJIldN0IWbjyrXy/Gji2uHlRReOjWqDcCZ9iOWHfHkgmu/C6FWdf59Kr2f+keB+7Vd7pT/WEIvkyXxldc/ChjGzLd+EO4fi4uNx02to+HU6Wg4b5KI+KuOhlOt4+GbPB5uGh0N562Oh5vXeDh/6ng4fcXDeWXbQJy+I+JFGg/nTtg43Ijmhrzt8q7DcB6kDcMdbR2Hm2VEvMjj4bx22BLPZknqOB/5tFa7wYdZEjtm58J3Rzztp1i+zJNUWjjo5n0z/ok351Dz2Pwh7coAsnZj0LOwU1jeztHennG4GFUSXBaJMht/xWVLKbHxbxxeRHzkvBH4BvSeOadQwEf+Ytv5Aoe3Nr7E4aay8QyXqDY/Nt7gcGpsvAI2OHttjOxjWEwlgnP0/lGIqesfDohSrNOA+OoP/++eucTfYr5qyCmcwIEDiwPHDaksp+3A8VwMqcuYk4kUOIcT0ygNxPcCh60ZHFNn4IpFLhr0GrdWexd4yJZ/IC5TMnvg9FXgYSctgoJ68aKHnTEJwmUOEJiTkdsMM2UbXbh80XEZIdc+wxbXyUl8x6hrXzhy/dlwf+1sZvo29s75Kfpjyvv6+9s8o7yjxWlHsn+eGbVzZ0vi82xzKBYJUBc+19aWa58DhVuHVLA4bx33HYUrcmwp4nDHfYfh90eywLg8JYPESSbdcbgikSJA4mL2DsSVsZscEhdDGxIXM2gsvo6I2ykKLM6fSTzcet3A+P0RKTSuTBYRV5w+EPc94c4f6aPwJ/+yAi6zx+DcBRRUMH89BKc2qJTEDIkT3/mWkgQV0TC99dNZmVvcb9lc5KHlQ7QavppjBc8um+Jn61fGUmul+zJshcXmtCi9lC55nlcq+9glY1o/xyiWG49bRS8TxF+7OR0z+wdKQ7XukUWx57ngNckVoRz4FxA2Kn+sAJX9AAAAAElFTkSuQmCC');
+    background-size: cover;
+    width: 100px;
+    height: 1000px
+}
+
+#rating {
+    margin-left: 15px;
+    margin-bottom: 30px;
+}

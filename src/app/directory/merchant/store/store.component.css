@@ -1,0 +1,68 @@
+.prod-navigation {
+    list-style: none;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-color: #e8e5e5;
+    border-style: solid;
+    border-width: 1px 0;
+}
+
+.prod-navigation:first-child {
+    padding-left: 0;
+}
+
+.prod-navigation li {
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    color: #424243;
+}
+
+.product {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.product-img {
+    width: 100%;
+    transition: transform 1s ease-out;
+    -webkit-transition: transform 1s ease-out;
+    -moz-transition: transform 1s ease-out;
+    -ms-transition: transform 1s ease-out;
+    -o-transition: transform 1s ease-out;
+}
+
+.product-img:hover {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transition: transform 1s ease;
+    -webkit-transition: transform 1s ease;
+    -moz-transition: transform 1s ease;
+    -ms-transition: transform 1s ease;
+    -o-transition: transform 1s ease;
+}
+
+.img-fluid {
+    height: 200px;
+}
+
+.example-card {
+    max-width: 400px;
+}
+
+.example-header-image {
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+}
+
+
+/* @media screen and (min-width: 576px) { 
+    .product {
+        width: 100px;
+        height: 100px;
+    }
+ } */
