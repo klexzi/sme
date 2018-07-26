@@ -17,9 +17,12 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FashionComponent } from './market/fashion/fashion.component';
 import { ShowcaseComponent } from './market/showcase/showcase.component';
 import { MerchantComponent } from './directory/merchant/merchant.component';
+import { AdvertiseComponent } from './help/advertise/advertise.component';
 import { BrandsComponent } from './market/brands/brands.component';
 import { ElectronicsComponent } from './market/electronics/electronics.component';
 import { HotprodcutComponent } from './market/hotprodcut/hotprodcut.component';
+import { AboutComponent } from './help/about/about.component';
+import { UserComponent } from './user/user.component';
 
 
 @NgModule({
@@ -36,9 +39,12 @@ import { HotprodcutComponent } from './market/hotprodcut/hotprodcut.component';
     ContactComponent,
     FashionComponent,
     ShowcaseComponent,
+    AdvertiseComponent,
     BrandsComponent,
     ElectronicsComponent,
-    HotprodcutComponent
+    HotprodcutComponent,
+    AboutComponent,
+    UserComponent
   ],
   imports: [
     BrowserModule,
@@ -59,7 +65,9 @@ import { HotprodcutComponent } from './market/hotprodcut/hotprodcut.component';
      { path: 'market/fashions', component: FashionComponent  },
       { path: 'market', component: MarketComponent },
       { path: 'directory', component: DirectoryComponent },
-      { path: 'help/contact-us', component: ContactComponent }
+      { path: 'help/contact-us', component: ContactComponent },
+      { path: 'help/advertise', component: AdvertiseComponent },
+      { path: 'help/about-us', component: AboutComponent }
      ])
   ],
   providers: [],
