@@ -37,6 +37,7 @@ import { SignupComponent } from './signup/signup.component';
 import { AdminComponent } from './admin/admin.component';
 import { ManageUsersComponent, BlockDialogComponent } from './admin/manage-users/manage-users.component';
 import { ManageMerchantsComponent, DeactivateDialogComponent } from './admin/manage-merchants/manage-merchants.component';
+import { BroadcastComponent } from './admin/broadcast/broadcast.component';
 
 
 
@@ -76,6 +77,7 @@ import { ManageMerchantsComponent, DeactivateDialogComponent } from './admin/man
     ManageMerchantsComponent,
     BlockDialogComponent,
     DeactivateDialogComponent,
+    BroadcastComponent,
   ],
   imports: [
     BrowserModule,

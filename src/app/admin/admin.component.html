@@ -4,10 +4,13 @@
         <div class="sidebar-sticky">
           <div class="nav flex-column">
             <mat-nav-list class="py-0" (click)="activate('users')">
-              <a mat-list-item class="text-secondary"> <span class="text-center active">Manage Users</span></a>
+              <a mat-list-item class="text-secondary"> <span class="text-center active"><i class="fa fa-tasks"></i> &nbsp; Manage Users</span></a>
             </mat-nav-list>
             <mat-nav-list class="py-0" (click)="activate('merchants')">
-              <a mat-list-item class="text-secondary"> <span class="text-center active">Manage Merchants</span></a>
+              <a mat-list-item class="text-secondary"> <span class="text-center active"><i class="fa fa-tasks"></i> &nbsp; <span class="mat-body-2">Manage Merchants</span></span></a>
+            </mat-nav-list>
+            <mat-nav-list class="py-0" (click)="activate('broadcast')">
+              <a mat-list-item class="text-secondary"> <span class="text-center active"><i class="fa fa-bullhorn"></i> &nbsp; Send Broadcast</span></a>
             </mat-nav-list>
           </div>  
         </div>
@@ -15,6 +18,7 @@
     <div class="col-md-10 bg-white">
       <manage-users *ngIf="manage_users"></manage-users>
       <manage-merchants *ngIf="manage_merchants"></manage-merchants>
+      <broadcast *ngIf="broadcast"></broadcast>
     </div>
   </div>
 </div>

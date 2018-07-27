@@ -25,13 +25,17 @@ export class ContactComponent implements OnInit {
   }
   getSubjectError() {
     return this.subject.hasError('required') ? 'Pls Enter The Subject' :
-     this.subject.hasError('pattern') ? 'Only Letters Allowed' :
+     this.subject.hasError('pattern') ? 'Only Letters and Spaces Allowed' :
       '';
   }
   getEmailError() {
     return this.email.hasError('required') ? 'Pls Enter Your E-mail Address' :
     this.email.hasError('email') ? 'Pls Enter a valid Email Address' :
     '';
+  }
+  getMessageError() {
+    return this.message.hasError('pattern') ? 'Only letters and Spaces Allowed' :
+    this.message.hasError('required') ? 'Please Enter the Message' : '';
   }
   sendMail(form) {
     if (this.form.valid) {
