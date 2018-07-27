@@ -25,6 +25,8 @@ import { AboutComponent } from './help/about/about.component';
 import { UserComponent } from './user/user.component';
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
+import { EdituserComponent } from './user/edituser/edituser.component';
+import {CdkTableModule} from '@angular/cdk/table';
 
 
 @NgModule({
@@ -49,7 +51,8 @@ import { SignupComponent } from './signup/signup.component';
     UserComponent,
     AboutComponent,
     LoginComponent,
-    SignupComponent
+    SignupComponent,
+    EdituserComponent
   ],
   imports: [
     BrowserModule,
@@ -60,6 +63,7 @@ import { SignupComponent } from './signup/signup.component';
     FlexLayoutModule,
     MatComponentsModule,
     FlexLayoutModule,
+    CdkTableModule,
     RouterModule.forRoot([
       { path: '', component: HomeComponent },
       { path: 'market/fashions/:id', component: ShowcaseComponent },
@@ -78,6 +82,7 @@ import { SignupComponent } from './signup/signup.component';
      ])
   ],
   providers: [],
+//  entryComponents: [EditUserComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
