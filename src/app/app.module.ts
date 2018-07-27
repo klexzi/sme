@@ -29,7 +29,9 @@ import { MsidenavComponent } from './merchantboard/msidenav/msidenav.component';
 import { AdvertiseComponent } from './help/advertise/advertise.component';
 import { BrandsComponent } from './market/brands/brands.component';
 import { ElectronicsComponent } from './market/electronics/electronics.component';
+import { HotprodcutComponent } from './market/hotprodcut/hotprodcut.component';
 import { AboutComponent } from './help/about/about.component';
+import { UserComponent } from './user/user.component';
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
 
@@ -60,6 +62,9 @@ import { SignupComponent } from './signup/signup.component';
     AdvertiseComponent,
     BrandsComponent,
     ElectronicsComponent,
+    HotprodcutComponent,
+    AboutComponent,
+    UserComponent,
     AboutComponent,
     LoginComponent,
     SignupComponent
@@ -92,7 +97,7 @@ import { SignupComponent } from './signup/signup.component';
       { path: 'help/contact-us', component: ContactComponent }
 
       { path: 'login', component: LoginComponent },
-      { path: 'sign-up', component: SignupComponent },
+      { path: 'signup', component: SignupComponent },
       { path: 'help/contact-us', component: ContactComponent },
       { path: 'help/advertise', component: AdvertiseComponent },
       { path: 'help/about-us', component: AboutComponent }
