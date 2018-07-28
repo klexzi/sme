@@ -8,8 +8,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./merchant.component.css']
 })
 export class MerchantComponent implements OnInit {
-
+  reviewbox = false;
   constructor() { }
+
+  review() {
+    this.reviewbox = !(this.reviewbox);
+  }
 
   ngOnInit() {
   }

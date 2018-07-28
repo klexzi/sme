@@ -1,4 +1,4 @@
-<div fxLayout style="height:400px; background-image: url(http://ictbrainchallenge.com/wp-content/uploads/2018/05/1-1024x256.jpg); background-size: cover; height: 300px;">
+<div fxLayout style="height:400px; background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLsjSc6o1DbbT0bk61rMewLlKsOstUgSe-r-yMFvNNwnSBtlBqVQ); ">
     <span fxFlex="100%" fxFlexAlign="center" fxFlexAlign.end="center" fxFlexOffset="350px" fxFlexOffset.xs="40px" fxFlexOffset.sm="160px">  <input  color="warn" type="search" style=" height:50px; width:300px" placeholder="Find a merchant"> &nbsp; &nbsp;<button mat-raised-button color="warn" style=" height:50px; width:170px">Search</button></span>
 
 
@@ -14,6 +14,7 @@
 
 </div>
 
+<div class="container">
 <mat-tab-group mat-stretch-tabs>
     <mat-tab label="Profile">
         <app-contact-merchant></app-contact-merchant>
@@ -72,5 +73,67 @@
             <p style="clear: both;"></p>
         </div>
     </mat-tab>
+<mat-tab label="Reviews">
+<div style="margin-bottom:60px; margin-top:60px;">
+        <div class="container" >
+        <ul class="list-group">
+            <li class="list-group-item"><div>Merchant is very good , bought an phone x from them and it was amazing i rate them a 3 star</div>
+             <div class="small">Anonymous</div>
+<div>
+<i class="fa fa-star" aria-hidden="true"></i>
+<i class="fa fa-star" aria-hidden="true"></i>
+<i class="fa fa-star" aria-hidden="true"></i>
+<i class="fa fa-star" aria-hidden="true"></i>
+<i class="fa fa-star" aria-hidden="true"></i> <br/>
+</div>
+</li>
+        <li class="list-group-item"><div>Merchant is very good , bought an phone x from them and it was amazing i rate them a 3 star</div>
+             <div class="small">Anonymous</div>
+<div>
+<i class="fa fa-star" aria-hidden="true"></i>
+<i class="fa fa-star" aria-hidden="true"></i>
+<i class="fa fa-star" aria-hidden="true"></i>
+<i class="fa fa-star" aria-hidden="true"></i>
+<i class="fa fa-star" aria-hidden="true"></i> <br/>
+</div>
+</li>
+
+<li class="list-group-item"><div>Merchant is very good , bought an phone x from them and it was amazing i rate them a 3 star</div>
+             <div class="small">Anonymous</div>
+<div>
+<i class="fa fa-star" aria-hidden="true"></i>
+<i class="fa fa-star" aria-hidden="true"></i>
+<i class="fa fa-star" aria-hidden="true"></i>
+<i class="fa fa-star" aria-hidden="true"></i>
+<i class="fa fa-star" aria-hidden="true"></i> <br/>
+</div>
+</li>
+            <li class="list-group-item">&nbsp;</li>
+            <button mat-raised button color="primary" (click)="review()">Write a Review</button>
+        </ul>
+        </div>
+        <div  *ngIf="reviewbox" class="container">
+        <div class="example-container">
+ 
+
+  <mat-form-field>
+  
+    <textarea matInput placeholder="Write a Review" ></textarea>
+  </mat-form-field>
+<div>
+<i class="fa fa-star" aria-hidden="true"></i>
+<i class="fa fa-star" aria-hidden="true"></i>
+<i class="fa fa-star" aria-hidden="true"></i>
+<i class="fa fa-star" aria-hidden="true"></i>
+<i class="fa fa-star" aria-hidden="true"></i> <br/>
+</div>
+<button class="btn btn-primary"> SUBMIT</button>
+ 
+</div>
+        </div>
+        </div>
+    </mat-tab>
 
 </mat-tab-group>
+
+</div>

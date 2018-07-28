@@ -18,6 +18,15 @@
     margin-right: 20px
 }
 
+.example-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.example-container > * {
+  width: 100%;
+}
+
 .prod-navigation {
     list-style: none;
     padding-top: 2px;

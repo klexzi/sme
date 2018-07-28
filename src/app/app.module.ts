@@ -34,6 +34,8 @@ import { AboutComponent } from './help/about/about.component';
 import { UserComponent } from './user/user.component';
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
+import { MerchantprofileComponent } from './merchantboard/merchantprofile/merchantprofile.component';
+import { EditmerchantComponent } from './merchantboard/editmerchant/editmerchant.component';
 
 
 
@@ -67,7 +69,9 @@ import { SignupComponent } from './signup/signup.component';
     UserComponent,
     AboutComponent,
     LoginComponent,
-    SignupComponent
+    SignupComponent,
+    MerchantprofileComponent,
+    EditmerchantComponent
 
   ],
   imports: [
