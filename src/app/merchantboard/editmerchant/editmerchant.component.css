@@ -1,0 +1,22 @@
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.container>* {
+    width: 100%;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form>* {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+textarea {
+    resize: none;
+}

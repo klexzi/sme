@@ -8,14 +8,7 @@ import {FormBuilder, FormGroup} from '@angular/forms';
 export class MsidenavComponent implements OnInit {
   options: FormGroup;
 
-  constructor(fb: FormBuilder) {
-    this.options = fb.group({
-      bottom: 0,
-      fixed: false,
-      top: 0
-    });
-  }
-
+ 
   
   constructor() { }
 

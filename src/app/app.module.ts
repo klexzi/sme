@@ -36,6 +36,11 @@ import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
 import { MerchantprofileComponent } from './merchantboard/merchantprofile/merchantprofile.component';
 import { EditmerchantComponent } from './merchantboard/editmerchant/editmerchant.component';
+import { AdminComponent } from './admin/admin.component';
+import { ManageUsersComponent, BlockDialogComponent } from './admin/manage-users/manage-users.component';
+import { ManageMerchantsComponent, DeactivateDialogComponent } from './admin/manage-merchants/manage-merchants.component';
+import { BroadcastComponent } from './admin/broadcast/broadcast.component';
+import { ManagePostComponent, DialogOverviewExampleDialog } from './merchantboard/manage-post/manage-post.component';
 
 
 
@@ -71,8 +76,17 @@ import { EditmerchantComponent } from './merchantboard/editmerchant/editmerchant
     LoginComponent,
     SignupComponent,
     MerchantprofileComponent,
-    EditmerchantComponent
+    EditmerchantComponent,
 
+    AdminComponent,
+    ManageUsersComponent,
+    ManageMerchantsComponent,
+    
+    BlockDialogComponent,
+    DeactivateDialogComponent,
+    BroadcastComponent,
+    ManagePostComponent,
+    DialogOverviewExampleDialog
   ],
   imports: [
     BrowserModule,
@@ -90,7 +104,7 @@ import { EditmerchantComponent } from './merchantboard/editmerchant/editmerchant
       { path: 'market/electronics/:id', component: ShowcaseComponent },
       { path: 'market/electronics', component: ElectronicsComponent },
       { path: 'market/brands', component: BrandsComponent },
-     { path: 'market/fashions', component: FashionComponent  },
+      { path: 'market/fashions', component: FashionComponent  },
       { path: 'market', component: MarketComponent },
       { path: 'directory', component: DirectoryComponent },
 
@@ -98,15 +112,20 @@ import { EditmerchantComponent } from './merchantboard/editmerchant/editmerchant
       { path: 'merchantboard', component: MerchantboardComponent },
       { path: 'merchant/store/:id', component: ProductComponent },
       { path: 'merchant/store', component: StoreComponent },
-      { path: 'help/contact-us', component: ContactComponent }
+      { path: 'help/contact-us', component: ContactComponent },
 
       { path: 'login', component: LoginComponent },
       { path: 'signup', component: SignupComponent },
       { path: 'help/contact-us', component: ContactComponent },
       { path: 'help/advertise', component: AdvertiseComponent },
-      { path: 'help/about-us', component: AboutComponent }
-
+      { path: 'help/about-us', component: AboutComponent },
+      { path: 'admin', component: AdminComponent },
      ])
+  ],
+  entryComponents: [
+    BlockDialogComponent,
+    DialogOverviewExampleDialog,
+    DeactivateDialogComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
