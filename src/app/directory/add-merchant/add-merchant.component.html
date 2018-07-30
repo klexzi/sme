@@ -1,0 +1,116 @@
+<div class="container pt-5 pb-5">
+    <div class="row">
+        <div class="col-md-8 offset-2">
+            <div class="mat-elevation-z1">
+
+                <mat-toolbar color="accent">
+                    <mat-toolbar-row>
+                        <span>BECOME A MERCHANT</span>
+                        <span class="example-spacer"></span>
+                        <mat-icon class="example-icon float-right">person</mat-icon>
+                    </mat-toolbar-row>
+                </mat-toolbar>
+
+                <form [formGroup]="form" #f="ngForm" (ngSubmit)="submit(form)">
+
+                    <div class="form mt-5 p-2">
+
+                        <mat-form-field appearance="outline">
+                            <mat-label>Merchant Name</mat-label>
+                            <input formControlName="merchant_name" matInput placeholder="Merchant Name">
+                            <mat-icon matSuffix>work</mat-icon>
+                            <mat-hint *ngIf="form.get('merchant_name').touched && form.get('merchant_name').invalid">
+                                <mat-hint *ngIf="form.get('merchant_name').errors.required">item is required</mat-hint>
+
+                            </mat-hint>
+
+                        </mat-form-field>
+
+                        <mat-form-field appearance="outline">
+                            <mat-select placeholder="Choose Store Category" formControlName="category" required>
+                                <mat-option></mat-option>
+                                <mat-option *ngFor="let category of control" [value]="category.value">
+                                    {{category.name}}
+                                </mat-option>
+                            </mat-select>
+                            <!-- <mat-error  *ngIf="form.get('category').touched && form.get('category').invalid">
+  <mat-error *ngIf="form.get('category').errors.required">category is required</mat-error>
+  </mat-error> -->
+
+                        </mat-form-field>
+
+
+
+                        <mat-form-field appearance="outline">
+                            <mat-label>Merchant Email</mat-label>
+                            <input formControlName="email" matInput placeholder="Email">
+                            <mat-icon matSuffix>mail</mat-icon>
+                            <mat-hint *ngIf="form.get('email').touched && form.get('email').invalid">
+                                <mat-hint *ngIf="form.get('email').errors.required">email is required*</mat-hint>
+                                <mat-hint *ngIf="form.get('email').errors.pattern">email is invalid</mat-hint>
+
+                            </mat-hint>
+                        </mat-form-field>
+
+
+                        <mat-form-field appearance="outline">
+                            <mat-label>Address</mat-label>
+                            <input formControlName="address" matInput placeholder="Placeholder">
+                            <mat-icon matSuffix>location_on</mat-icon>
+                            <mat-hint *ngIf="form.get('address').touched && form.get('address').invalid">
+                                <mat-hint *ngIf="form.get('address').errors.required"> Address is required*</mat-hint>
+
+                            </mat-hint>
+                        </mat-form-field>
+
+
+                        <mat-form-field appearance="outline">
+                            <mat-label>About Your Company</mat-label>
+                            <textarea formControlName="about_merchant" cdkTextareaAutosize #autosize="cdkTextareaAutosize" cdkAutosizeMinRows="4" cdkAutosizeMaxRows="5" matInput placeholder="Leave a comment"> </textarea>
+                            <mat-icon matSuffix>comment</mat-icon>
+                            <mat-hint *ngIf="form.get('about_merchant').touched && form.get('about_merchant').invalid">
+                                <mat-hint *ngIf="form.get('about_merchant').errors.maxLength"> Maximum Size is 300 Letters</mat-hint>
+
+                            </mat-hint>
+                        </mat-form-field>
+
+                        <mat-form-field appearance="outline">
+                            <mat-label>Phone Number 1</mat-label>
+                            <input formControlName="phone_number1" matInput placeholder="Phone Number 1">
+                            <mat-icon matSuffix>phone</mat-icon>
+                            <mat-hint *ngIf="form.get('phone_number1').touched && form.get('phone_number1').invalid">
+                                <mat-hint *ngIf="form.get('phone_number1').errors.required"> Phone Number 1 is required*</mat-hint>
+                                <mat-hint *ngIf="form.get('phone_number1').errors.pattern"> Phone Number is invalid</mat-hint>
+                            </mat-hint>
+                        </mat-form-field>
+
+
+                        <mat-form-field appearance="outline">
+                            <mat-label> Other Phone Number</mat-label>
+                            <input formControlName="phone_number2" matInput placeholder="Other phone Number">
+                            <mat-icon matSuffix>phone</mat-icon>
+                            <mat-hint *ngIf="form.get('phone_number2').touched && form.get('phone_number2').invalid">
+                                <mat-hint *ngIf="form.get('phone_number2').errors.pattern"> Phone Number is invalid</mat-hint>
+                            </mat-hint>
+                        </mat-form-field>
+
+                        <mat-form-field appearance="outline">
+                            <mat-label> Password</mat-label>
+                            <input type="{{yep}}" #password formControlName="password" matInput placeholder="Other phone Number">
+                            <mat-icon (click)="log()" matSuffix>visibility</mat-icon>
+
+                        </mat-form-field>
+
+
+                        <button type="submit" mat-raised-button color="primary" [disabled]="!form.valid" class="mx-auto d-block">Submit</button>
+                        <div class="small text mx-auto d-block ml-5 pb-5 "><span class=" mx-auto d-block pl-5"> Already Registered  <a>Sign in</a></span> </div>
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>

@@ -10,7 +10,8 @@ import {
   MatIconModule,
   MatExpansionModule,
   MatTableModule,
-
+  
+  MatSnackBarModule,
   MatChipsModule,
   MatProgressSpinnerModule,
   MatTooltipModule,
@@ -20,7 +21,6 @@ import {
   MatGridListModule ,
   MatListModule,
   MatPaginatorModule,
-  MatSnackBarModule,
 } from '@angular/material';
 import {MatButtonModule} from '@angular/material/button';
 import {MatToolbarModule} from '@angular/material/toolbar';
@@ -52,7 +52,8 @@ import {MatDividerModule} from '@angular/material/divider';
     MatPaginatorModule,
     MatExpansionModule,
     MatSnackBarModule,
-    MatTableModule
+    MatTableModule,
+    MatSnackBarModule
   ]
 })
 export class MatComponentsModule { }

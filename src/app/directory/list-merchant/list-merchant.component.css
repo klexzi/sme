@@ -1,0 +1,21 @@
+table {
+  width: 100%;
+}
+
+.mat-form-field {
+  font-size: 14px;
+  width: 75%;
+}
+
+td, th {
+  width: auto;
+}
+
+td.mat-cell, td.mat-footer-cell, th.mat-header-cell {
+    padding: 0;
+    border-bottom-width:1px;
+    border-bottom-style:none;
+}
+#about{
+    width:30px;
+}

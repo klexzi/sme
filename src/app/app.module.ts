@@ -35,10 +35,16 @@ import { UserComponent } from './user/user.component';
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
 import { EdituserComponent } from './user/edituser/edituser.component';
+import { MerchantprofileComponent } from './merchantboard/merchantprofile/merchantprofile.component';
+import { EditmerchantComponent } from './merchantboard/editmerchant/editmerchant.component';
 import { AdminComponent } from './admin/admin.component';
 import { ManageUsersComponent, BlockDialogComponent } from './admin/manage-users/manage-users.component';
 import { ManageMerchantsComponent, DeactivateDialogComponent } from './admin/manage-merchants/manage-merchants.component';
 import { BroadcastComponent } from './admin/broadcast/broadcast.component';
+import { ManagePostComponent, DialogOverviewExampleDialog } from './merchantboard/manage-post/manage-post.component';
+import { AddPostComponent } from './merchantboard/add-post/add-post.component';
+import { AddMerchantComponent } from './directory/add-merchant/add-merchant.component';
+import { ListMerchantComponent } from './directory/list-merchant/list-merchant.component';
 
 
 
@@ -74,12 +80,21 @@ import { BroadcastComponent } from './admin/broadcast/broadcast.component';
     LoginComponent,
     SignupComponent,
     EdituserComponent,
+    MerchantprofileComponent,
+    EditmerchantComponent,
+
     AdminComponent,
     ManageUsersComponent,
     ManageMerchantsComponent,
+    
     BlockDialogComponent,
     DeactivateDialogComponent,
     BroadcastComponent,
+    ManagePostComponent,
+    DialogOverviewExampleDialog,
+    AddPostComponent,
+    AddMerchantComponent,
+    ListMerchantComponent
   ],
   imports: [
     BrowserModule,
@@ -106,6 +121,8 @@ import { BroadcastComponent } from './admin/broadcast/broadcast.component';
       { path: 'merchant/store/:id', component: ProductComponent },
       { path: 'merchant/store', component: StoreComponent },
       { path: 'help/contact-us', component: ContactComponent },
+       { path: 'addmerchant', component: AddMerchantComponent },
+       { path:'listmerchant' , component:ListMerchantComponent},
 
       { path: 'login', component: LoginComponent },
       { path: 'signup', component: SignupComponent },
@@ -120,6 +137,8 @@ import { BroadcastComponent } from './admin/broadcast/broadcast.component';
   entryComponents: [
     BlockDialogComponent,
     DeactivateDialogComponent,
+    DialogOverviewExampleDialog,
+    DeactivateDialogComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
