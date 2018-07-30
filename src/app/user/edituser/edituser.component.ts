@@ -90,7 +90,7 @@ openSnackBar(message: string, action: string) {
     duration: 2000,
   });
    setTimeout(() => {
-    UserComponent.viewChanger = false;
+    UserComponent.viewChanger = 'viewProfile';
    }, 3000);
 }
 

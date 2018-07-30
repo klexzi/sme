@@ -1,3 +1,4 @@
+
 import { DirectoryComponent } from './directory/directory.component';
 import { HomeComponent } from './home/home.component';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -17,6 +18,14 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FashionComponent } from './market/fashion/fashion.component';
 import { ShowcaseComponent } from './market/showcase/showcase.component';
 import { MerchantComponent } from './directory/merchant/merchant.component';
+
+import { ContactMerchantComponent } from './directory/merchantstore/contact-merchant/contact-merchant.component';
+import { StoreComponent } from './directory/merchant/store/store.component';
+import { ProductComponent } from './directory/merchant/product/product.component';
+import { MerchantboardComponent } from './merchantboard/merchantboard.component';
+import { MsidenavComponent } from './merchantboard/msidenav/msidenav.component';
+
+
 import { AdvertiseComponent } from './help/advertise/advertise.component';
 import { BrandsComponent } from './market/brands/brands.component';
 import { ElectronicsComponent } from './market/electronics/electronics.component';
@@ -26,7 +35,11 @@ import { UserComponent } from './user/user.component';
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
 import { EdituserComponent } from './user/edituser/edituser.component';
-import {CdkTableModule} from '@angular/cdk/table';
+import { AdminComponent } from './admin/admin.component';
+import { ManageUsersComponent, BlockDialogComponent } from './admin/manage-users/manage-users.component';
+import { ManageMerchantsComponent, DeactivateDialogComponent } from './admin/manage-merchants/manage-merchants.component';
+import { BroadcastComponent } from './admin/broadcast/broadcast.component';
+
 
 
 @NgModule({
@@ -43,6 +56,14 @@ import {CdkTableModule} from '@angular/cdk/table';
     ContactComponent,
     FashionComponent,
     ShowcaseComponent,
+
+    ContactMerchantComponent,
+    StoreComponent,
+    ProductComponent,
+    MerchantboardComponent,
+    MsidenavComponent,
+
+
     AdvertiseComponent,
     BrandsComponent,
     ElectronicsComponent,
@@ -52,7 +73,13 @@ import {CdkTableModule} from '@angular/cdk/table';
     AboutComponent,
     LoginComponent,
     SignupComponent,
-    EdituserComponent
+    EdituserComponent,
+    AdminComponent,
+    ManageUsersComponent,
+    ManageMerchantsComponent,
+    BlockDialogComponent,
+    DeactivateDialogComponent,
+    BroadcastComponent,
   ],
   imports: [
     BrowserModule,
@@ -63,7 +90,6 @@ import {CdkTableModule} from '@angular/cdk/table';
     FlexLayoutModule,
     MatComponentsModule,
     FlexLayoutModule,
-    CdkTableModule,
     RouterModule.forRoot([
       { path: '', component: HomeComponent },
       { path: 'market/fashions/:id', component: ShowcaseComponent },
@@ -71,18 +97,31 @@ import {CdkTableModule} from '@angular/cdk/table';
       { path: 'market/electronics/:id', component: ShowcaseComponent },
       { path: 'market/electronics', component: ElectronicsComponent },
       { path: 'market/brands', component: BrandsComponent },
-     { path: 'market/fashions', component: FashionComponent  },
+      { path: 'market/fashions', component: FashionComponent  },
       { path: 'market', component: MarketComponent },
       { path: 'directory', component: DirectoryComponent },
+
+      { path: 'merchant', component: MerchantComponent },
+      { path: 'merchantboard', component: MerchantboardComponent },
+      { path: 'merchant/store/:id', component: ProductComponent },
+      { path: 'merchant/store', component: StoreComponent },
+      { path: 'help/contact-us', component: ContactComponent },
+
       { path: 'login', component: LoginComponent },
       { path: 'signup', component: SignupComponent },
       { path: 'help/contact-us', component: ContactComponent },
       { path: 'help/advertise', component: AdvertiseComponent },
-      { path: 'help/about-us', component: AboutComponent }
+      { path: 'help/about-us', component: AboutComponent },
+      { path: 'admin', component: AdminComponent },
+
+      { path: 'user', component: UserComponent },
      ])
   ],
+  entryComponents: [
+    BlockDialogComponent,
+    DeactivateDialogComponent,
+  ],
   providers: [],
-//  entryComponents: [EditUserComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

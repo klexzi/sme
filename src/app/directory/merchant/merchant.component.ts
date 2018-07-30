@@ -1,3 +1,5 @@
+import { ContactMerchantComponent } from './../merchantstore/contact-merchant/contact-merchant.component';
+
 import { Component, OnInit } from '@angular/core';
 
 @Component({

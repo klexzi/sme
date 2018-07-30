@@ -2,8 +2,12 @@
     height: 90px;
 }
 
+.divider {
+    display: flex;
+}
+
 #bizlayout {
-    height: 700px;
+    height: 650px;
     margin-bottom: 30px;
     padding: 20px
 }
@@ -61,7 +65,7 @@
 }
 
 .mat-grid-tile {
-    background: lightblue;
+    /* background: lightblue; */
 }
 
 #matgrid {
@@ -73,4 +77,14 @@
 
 .leftrow {
     margin-bottom: 200px
+}
+
+#mattile {}
+
+#mattile:hover {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
 }

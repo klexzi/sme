@@ -1,5 +1,6 @@
 
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router'
 
 
 @Component({
@@ -8,10 +9,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./directory.component.css']
 })
 export class DirectoryComponent implements OnInit {
+  name="1"
  url="http://ictbrainchallenge.com/wp-content/uploads/2018/05/1-1024x256.jpg"
-  constructor() { }
+  constructor(private route : ActivatedRoute) {
+       
 
+   }
+  
   ngOnInit() {
+
+    
+  
   }
 
 }

@@ -1,0 +1,43 @@
+<div class="container">
+  <div class="row p-4">
+    <div class="col-md-7">
+        <span class="mat-title"> Send broadCast Message <i class="fa fa-bullhorn"></i></span>
+    </div>
+  </div>
+  <div class="row p-4">
+    <div class="col-md-1"></div>
+    <div class="col-md-8">
+      <form [formGroup]="form" (ngSubmit)="sendBroadcast(form.value)">
+        <div class="form">
+          <mat-form-field appearance="outline">
+            <mat-label>To</mat-label>
+            <mat-select 
+              placeholder="Targets"
+              formControlName="to" required>
+              <mat-option selected value="user">User</mat-option>
+              <mat-option value="merchant">Merchant</mat-option>
+              <mat-option value="all">All</mat-option>
+            </mat-select>
+          </mat-form-field>
+          <mat-form-field appearance="outline">
+            <mat-label>Message</mat-label>
+            <textarea
+            matInput 
+            name="message"
+            formControlName="message"
+            placeholder="Enter Your Message"
+            rows="10"
+            maxlength="500" 
+            style="resize: none" required>
+            </textarea>
+            <mat-icon matSuffix>message</mat-icon>
+            <mat-error> {{ getMessageError() }} </mat-error>
+          </mat-form-field>
+          <button type="submit" class="mat-button" mat-raised-button color="accent">Send <i class="fa fa-paper-plane"></i></button>
+        </div>
+
+      </form>
+      <br/>
+    </div>
+  </div>
+</div>

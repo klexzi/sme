@@ -1,0 +1,19 @@
+.sticky-table {
+    height: 400px;
+    overflow: auto;
+  }
+  .form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form > * {
+    width: 100%;
+  }
+  table {
+    width: 100%;
+  }
+
+  td.mat-cell, td.mat-footer-cell, th.mat-header-cell {
+    padding: 1rem;
+  }
