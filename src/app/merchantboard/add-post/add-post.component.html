@@ -1,7 +1,8 @@
+
 <mat-card>
  <mat-toolbar color="primary">
   <mat-toolbar-row>
-    <span>Edit Your Profile</span>
+    <span>Add Post</span>
     <span class="example-spacer"></span>
     <mat-icon class="example-icon float-right">person</mat-icon>
   </mat-toolbar-row>
@@ -14,7 +15,7 @@
         <div class="form mt-5" >
 
             <mat-form-field appearance="outline">
-                <mat-label>Merchant Name</mat-label>
+                <mat-label>Post Title</mat-label>
                 <input formControlName="merchant_name" matInput placeholder="Merchant Name">
                 <mat-icon matSuffix>work</mat-icon>
                 <mat-hint  *ngIf="form.get('merchant_name').touched && form.get('merchant_name').invalid">
@@ -27,7 +28,7 @@
 
 
             <mat-form-field appearance="outline">
-                <mat-label>Merchant Email</mat-label>
+                <mat-label>Upload picture</mat-label>
                 <input formControlName="email" matInput placeholder="Email">
                 <mat-icon matSuffix>mail</mat-icon>
              <mat-hint  *ngIf="form.get('email').touched && form.get('email').invalid">
@@ -50,14 +51,14 @@
 
             
              <mat-form-field appearance="outline">
-            <mat-label>About Your Company</mat-label>
+            <mat-label>Description</mat-label>
             <textarea 
             formControlName="about_merchant"
             cdkTextareaAutosize
             #autosize="cdkTextareaAutosize"
             cdkAutosizeMinRows="4"
             cdkAutosizeMaxRows="5" matInput placeholder="Leave a comment"> </textarea>
-            <mat-icon matSuffix>comment</mat-icon>
+            <mat-icon matSuffix>State</mat-icon>
                 <mat-hint *ngIf="form.get('about_merchant').touched && form.get('about_merchant').invalid">
                 <mat-hint *ngIf="form.get('about_merchant').errors.maxLength"> Maximum Size is 300 Letters</mat-hint>
                 
@@ -65,7 +66,7 @@
                 </mat-form-field>
 
             <mat-form-field appearance="outline">
-                <mat-label>Phone Number 1</mat-label>
+                <mat-label>Price</mat-label>
                 <input formControlName="phone_number1" matInput placeholder="Phone Number 1">
                 <mat-icon matSuffix>phone</mat-icon>
                 <mat-hint *ngIf="form.get('phone_number1').touched && form.get('phone_number1').invalid">

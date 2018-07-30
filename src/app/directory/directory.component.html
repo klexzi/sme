@@ -3,7 +3,7 @@
 
 </div> -->
 <div fxLayout style="height:400px; background-image: url(http://ictbrainchallenge.com/wp-content/uploads/2018/05/1-1024x256.jpg); background-size: cover; height: 300px;">
-    <span fxFlex="100%" fxFlexAlign="center" fxFlexAlign.end="center" fxFlexOffset="350px" fxFlexOffset.xs="40px" fxFlexOffset.sm="160px">  <input  color="warn" type="search" style=" height:50px; width:300px" placeholder="Find a merchant"> &nbsp; &nbsp;<button mat-raised-button color="warn" style=" height:50px; width:170px">Search</button></span>
+    <span fxFlex="100%" fxFlexAlign="center" fxFlexAlign.end="center" fxFlexOffset="350px" fxFlexOffset.xs="40px" fxFlexOffset.sm="160px">  <input  color="warn" type="search" style=" height:50px; width:300px" placeholder="Find a merchant"> &nbsp; &nbsp;<button  mat-raised-button color="warn" style=" height:50px; width:170px">Search</button></span>
 
 
 </div>
@@ -25,7 +25,7 @@
         <!-- <span fxHide.sm="true" fxHide.xs="true" fxHide.md="true"> <img  fxFlexOffset="300px" class="img-fluid" src="https://www.smearena.com.ng/client/images/socialcommerce/merchant-group.png"></span> -->
         <span fxFlexAlign="center" fxFlex="60%"><span fxFlexOffset="400px" fxFlexOffset.xs="5px" fxFlexOffset.md="50px" fxFlexOffset.sm="50px">search for any service provider <br/> use our service  </span></span>
 
-        <span fxFlex="40%" fxFlexAlign="center" FxFlexFill> <button  mat-raised-button color="warn">  <mat-icon  >work  </mat-icon> List your business</button></span>
+        <span fxFlex="40%" fxFlexAlign="center" FxFlexFill> <button routerLink="/addmerchant" mat-raised-button color="warn">  <mat-icon  >work  </mat-icon> List your business</button></span>
 
     </mat-toolbar-row>
 
@@ -63,7 +63,7 @@
 
         </mat-grid-list>
         <div class="row" style="margin-left:20px; ">
-            <a href="#"> <span class="text-danger"> click this link list your brand to the world</span></a>
+            <a routerLink ="/addmerchant"> <span class="text-danger"> click this link list your brand to the world</span></a>
         </div>
     </div>
 

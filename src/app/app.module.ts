@@ -41,6 +41,9 @@ import { ManageUsersComponent, BlockDialogComponent } from './admin/manage-users
 import { ManageMerchantsComponent, DeactivateDialogComponent } from './admin/manage-merchants/manage-merchants.component';
 import { BroadcastComponent } from './admin/broadcast/broadcast.component';
 import { ManagePostComponent, DialogOverviewExampleDialog } from './merchantboard/manage-post/manage-post.component';
+import { AddPostComponent } from './merchantboard/add-post/add-post.component';
+import { AddMerchantComponent } from './directory/add-merchant/add-merchant.component';
+import { ListMerchantComponent } from './directory/list-merchant/list-merchant.component';
 
 
 
@@ -86,7 +89,10 @@ import { ManagePostComponent, DialogOverviewExampleDialog } from './merchantboar
     DeactivateDialogComponent,
     BroadcastComponent,
     ManagePostComponent,
-    DialogOverviewExampleDialog
+    DialogOverviewExampleDialog,
+    AddPostComponent,
+    AddMerchantComponent,
+    ListMerchantComponent
   ],
   imports: [
     BrowserModule,
@@ -113,6 +119,8 @@ import { ManagePostComponent, DialogOverviewExampleDialog } from './merchantboar
       { path: 'merchant/store/:id', component: ProductComponent },
       { path: 'merchant/store', component: StoreComponent },
       { path: 'help/contact-us', component: ContactComponent },
+       { path: 'addmerchant', component: AddMerchantComponent },
+       { path:'listmerchant' , component:ListMerchantComponent},
 
       { path: 'login', component: LoginComponent },
       { path: 'signup', component: SignupComponent },

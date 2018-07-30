@@ -17,14 +17,14 @@ managePost = false;
      this.profile = true;
      this.editprofile = false;
      this.managePost= false
-     console.log(this.profile + this.editprofile);
+     
    }
 
    showEditProfile(){ 
      this.editprofile = true;
      this.profile = false;
      this.managePost= false;
-     console.log(this.profile + this.editprofile);
+    
    }
 
    showManagePost() {
