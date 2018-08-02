@@ -1,3 +1,4 @@
+import { ActivatedRoute } from '@angular/router';
 import {Component, OnInit, ViewChild} from '@angular/core';
 import {MatPaginator, MatSort, MatTableDataSource} from '@angular/material';
 
@@ -36,11 +37,13 @@ export class ListMerchantComponent implements OnInit {
 
   displayedColumns: string[] = ['id', 'name', 'tags', 'category'];
   dataSource: MatTableDataSource<UserData>;
+  id:string
+
 
   @ViewChild(MatPaginator) paginator: MatPaginator;
   @ViewChild(MatSort) sort: MatSort;
 
-  constructor() {
+  constructor(private route : ActivatedRoute) {
     // Create 100 users
     const users = Array.from({length: 100}, (_, k) => createNewUser(k + 1));
 
@@ -51,6 +54,20 @@ export class ListMerchantComponent implements OnInit {
   ngOnInit() {
     this.dataSource.paginator = this.paginator;
     this.dataSource.sort = this.sort;
+    //fid
+    
+    //
+
+    
+    this.route.queryParamMap.subscribe(
+  params =>{
+    this.id = params.get('merchantname');
+    console.log(this.id);
+    this.dataSource.paginator = this.paginator;
+    this.dataSource.sort = this.sort;
+  }
+)
+
   }
 
   applyFilter(filterValue: string) {
@@ -58,7 +75,10 @@ export class ListMerchantComponent implements OnInit {
 
     if (this.dataSource.paginator) {
       this.dataSource.paginator.firstPage();
+      
     }
+    
+
   }
 
 

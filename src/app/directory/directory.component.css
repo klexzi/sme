@@ -88,3 +88,14 @@
     -ms-transform: scale(1.1);
     -o-transform: scale(1.1);
 }
+
+
+/* css for the list items- start*/
+
+.media-photo {
+    width: 40px;
+    height: 40px;
+}
+
+
+/* style for list directory ends */

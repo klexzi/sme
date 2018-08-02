@@ -44,6 +44,7 @@ import { ManagePostComponent, DialogOverviewExampleDialog } from './merchantboar
 import { AddPostComponent } from './merchantboard/add-post/add-post.component';
 import { AddMerchantComponent } from './directory/add-merchant/add-merchant.component';
 import { ListMerchantComponent } from './directory/list-merchant/list-merchant.component';
+import { FilterPipe } from './filter.pipe';
 
 
 
@@ -92,7 +93,8 @@ import { ListMerchantComponent } from './directory/list-merchant/list-merchant.c
     DialogOverviewExampleDialog,
     AddPostComponent,
     AddMerchantComponent,
-    ListMerchantComponent
+    ListMerchantComponent,
+    FilterPipe
   ],
   imports: [
     BrowserModule,

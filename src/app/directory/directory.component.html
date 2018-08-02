@@ -2,8 +2,11 @@
     <div> <img class="img-fluid" fxFlex="100%" fxFlexFill src="http://ictbrainchallenge.com/wp-content/uploads/2018/05/1-1024x256.jpg" alt=""></div><br/>
 
 </div> -->
-<div fxLayout style="height:400px; background-image: url(http://ictbrainchallenge.com/wp-content/uploads/2018/05/1-1024x256.jpg); background-size: cover; height: 300px;">
-    <span fxFlex="100%" fxFlexAlign="center" fxFlexAlign.end="center" fxFlexOffset="350px" fxFlexOffset.xs="40px" fxFlexOffset.sm="160px">  <input  color="warn" type="search" style=" height:50px; width:300px" placeholder="Find a merchant"> &nbsp; &nbsp;<button  mat-raised-button color="warn" style=" height:50px; width:170px">Search</button></span>
+<div fxLayout style="height:400px; background-image: url(https://3.bp.blogspot.com/-aDC0HMdiIkI/Wr8X0PB5XXI/AAAAAAAAB3s/kPDbqedofD0_A65q3Stwz0UL5j2dmHi7gCLcBGAs/s1600/iso-banner-final1.jpg); background-size: cover; height: 300px;">
+    <span fxFlex="100%" fxFlexAlign="center" fxFlexAlign.end="center" fxFlexOffset="40%" fxFlexOffset.xs="40px" fxFlexOffset.sm="160px">
+          
+              <input name="searchText" (keyup)="searchPagefn()" [(ngModel)]="searchText" color="accent" type="text" style=" height:50px; width:300px" placeholder="Find a merchant"> 
+            </span>
 
 
 </div>
@@ -18,24 +21,24 @@
 
 </div>
 
-<div >
-<mat-toolbar color="primary">
-    <mat-toolbar-row id="dtoolbar" fxLayout="row" fxLayout.xs="column" fxLayoutAlign="center" fxLayoutGap="0px" fxLayoutGap.xs="1px" fxLayoutWrap>
+<div>
+    <mat-toolbar color="primary">
+        <mat-toolbar-row id="dtoolbar" fxLayout="row" fxLayout.xs="column" fxLayoutAlign="center" fxLayoutGap="0px" fxLayoutGap.xs="1px" fxLayoutWrap>
 
-        <!-- <span fxHide.sm="true" fxHide.xs="true" fxHide.md="true"> <img  fxFlexOffset="300px" class="img-fluid" src="https://www.smearena.com.ng/client/images/socialcommerce/merchant-group.png"></span> -->
-        <span fxFlexAlign="center" fxFlex="60%"><span fxFlexOffset="400px" fxFlexOffset.xs="5px" fxFlexOffset.md="50px" fxFlexOffset.sm="50px">search for any service provider <br/> use our service  </span></span>
+            <!-- <span fxHide.sm="true" fxHide.xs="true" fxHide.md="true"> <img  fxFlexOffset="300px" class="img-fluid" src="https://www.smearena.com.ng/client/images/socialcommerce/merchant-group.png"></span> -->
+            <span fxFlexAlign="center" fxFlex="60%"><span fxFlexOffset="400px" fxFlexOffset.xs="5px" fxFlexOffset.md="50px" fxFlexOffset.sm="50px">search for any service provider <br/> use our service  </span></span>
 
-        <span fxFlex="40%" fxFlexAlign="center" FxFlexFill> <button routerLink="/addmerchant" mat-raised-button color="warn">  <mat-icon  >work  </mat-icon> List your business</button></span>
+            <span fxFlex="40%" fxFlexAlign="center" FxFlexFill> <button routerLink="/addmerchant" mat-raised-button color="warn">  <mat-icon  >work  </mat-icon> List your business</button></span>
 
-    </mat-toolbar-row>
+        </mat-toolbar-row>
 
-</mat-toolbar>
+    </mat-toolbar>
 </div>
-
+<span *ngIf="directoryPage">
 <mat-list fxLayout id="bizlayout" fxLayout.xs="column" fxLayout.sm="row" fxLayout.md="row " fxLayoutGap="0.5%" fxLayoutAlign="center">
 
 
-    <div  class="container">
+    <div class="container">
 
         <div fxLayout="row-reverse" fxLayoutAlign="center" fxLayoutGap="10px">
             <h3 fxFlexOffset="130px" fxFlex="100%"><strong>Tob Brands</strong></h3>
@@ -63,41 +66,123 @@
 
         </mat-grid-list>
         <div class="row" style="margin-left:20px; ">
-            <a routerLink ="/addmerchant"> <span class="text-danger"> click this link list your brand to the world</span></a>
-        </div>
+            <a routerLink="/addmerchant"> <span class="text-danger"> click this link list your brand to the world</span></a>
+</div>
+</div>
+
+
+
+<mat-divider class="divider" [vertical]="true "></mat-divider>
+<div fxFlex="50% " style="margin-bottom:40px">
+
+    <div fxLayout="row-reverse" fxLayoutAlign="center" fxLayoutGap="10px">
+        <h3 fxFlexOffset="130px" fxFlex="100%"><strong>Top Categories</strong></h3>
     </div>
 
+    <mat-grid-list [responsiveCols]="{xs: 4, sm: 4, md: 4, lg: 4, xl: 4}" class="container" style>
 
-
-    <mat-divider class="divider" [vertical]="true "></mat-divider>
-    <div fxFlex="50% " style="margin-bottom:40px">
-
-        <div fxLayout="row-reverse" fxLayoutAlign="center" fxLayoutGap="10px">
-            <h3 fxFlexOffset="130px" fxFlex="100%"><strong>Top Categories</strong></h3>
-        </div>
-
-        <mat-grid-list [responsiveCols]="{xs: 4, sm: 4, md: 4, lg: 4, xl: 4}" class="container" style>
-
-            <mat-grid-tile id="mattile">
-                <a routerLink="/market/fashion"><img class="product img-fluid" src="https://gastsmearena.akamaized.net/122d49ed72d2e714553a80b31b0ccde2"></a>
-            </mat-grid-tile>
-            <mat-grid-tile id="mattile"><img class="product img-fluid" src="https://gastsmearena.akamaized.net/6db63264249d5904a246af046f12f63d"></mat-grid-tile>
-            <mat-grid-tile id="mattile"><img class="product img-fluid" src="https://gastsmearena.akamaized.net/bbb3aae2477e462888f8a2033a85faec"></mat-grid-tile>
-            <mat-grid-tile id="mattile"><img class="product img-fluid" src="https://gastsmearena.akamaized.net/bbb3aae2477e462888f8a2033a85faec"></mat-grid-tile>
-            <mat-grid-tile id="mattile">
-                <a routerLink="/market/fashion"><img class="product img-fluid" src="https://gastsmearena.akamaized.net/122d49ed72d2e714553a80b31b0ccde2"></a>
-            </mat-grid-tile>
-            <mat-grid-tile id="mattile"><img class="product img-fluid" src="https://gastsmearena.akamaized.net/6db63264249d5904a246af046f12f63d"></mat-grid-tile>
-            <mat-grid-tile id="mattile"><img class="product img-fluid" src="https://gastsmearena.akamaized.net/bbb3aae2477e462888f8a2033a85faec"></mat-grid-tile>
-            <mat-grid-tile id="mattile"><img class="product img-fluid" src="https://gastsmearena.akamaized.net/bbb3aae2477e462888f8a2033a85faec"></mat-grid-tile>
+        <mat-grid-tile id="mattile">
+            <a routerLink="/market/fashion"><img class="product img-fluid" src="https://gastsmearena.akamaized.net/122d49ed72d2e714553a80b31b0ccde2"></a>
+        </mat-grid-tile>
+        <mat-grid-tile id="mattile"><img class="product img-fluid" src="https://gastsmearena.akamaized.net/6db63264249d5904a246af046f12f63d"></mat-grid-tile>
+        <mat-grid-tile id="mattile"><img class="product img-fluid" src="https://gastsmearena.akamaized.net/bbb3aae2477e462888f8a2033a85faec"></mat-grid-tile>
+        <mat-grid-tile id="mattile"><img class="product img-fluid" src="https://gastsmearena.akamaized.net/bbb3aae2477e462888f8a2033a85faec"></mat-grid-tile>
+        <mat-grid-tile id="mattile">
+            <a routerLink="/market/fashion"><img class="product img-fluid" src="https://gastsmearena.akamaized.net/122d49ed72d2e714553a80b31b0ccde2"></a>
+        </mat-grid-tile>
+        <mat-grid-tile id="mattile"><img class="product img-fluid" src="https://gastsmearena.akamaized.net/6db63264249d5904a246af046f12f63d"></mat-grid-tile>
+        <mat-grid-tile id="mattile"><img class="product img-fluid" src="https://gastsmearena.akamaized.net/bbb3aae2477e462888f8a2033a85faec"></mat-grid-tile>
+        <mat-grid-tile id="mattile"><img class="product img-fluid" src="https://gastsmearena.akamaized.net/bbb3aae2477e462888f8a2033a85faec"></mat-grid-tile>
 
 
 
-        </mat-grid-list>
+    </mat-grid-list>
 
-        <div class="row" style="margin-left:20px; margin-bottom:40px">
-            <a href="#"> <span class="text-danger"> click this link to see top products</span></a>
-        </div>
+    <div class="row" style="margin-left:20px; margin-bottom:40px">
+        <a href="#"> <span class="text-danger"> click this link to see top products</span></a>
     </div>
+</div>
 
 </mat-list>
+</span>
+
+
+
+
+
+<div class="container" *ngIf="searchPage">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="pt-5 pb-5 p-5">
+                <div class="mat-elevation-z8">
+
+                    <ul class="list-group">
+                        <li class="list-group-item" *ngFor=" let c of bckdata | filter : searchText ">
+                            <div class="media">
+                                <a href="#" class="pull-left">
+                                    <img src="https://s3.amazonaws.com/uifaces/faces/twitter/fffabs/128.jpg" class="media-photo">
+                                </a>
+                                <div class="media-body ml-5">
+
+                                    <h5 class="title">
+                                        {{c.name}}
+                                        <span class="pull-right small"> <br/><mat-chip-list> <mat-chip>{{c.tag1}} </mat-chip> 
+                                        <mat-chip>{{c.tag2}} </mat-chip>
+                                        <mat-chip>{{c.tag3}} </mat-chip>
+                                        </mat-chip-list>
+
+                                        <!-- <mat-accordion>
+                                                <mat-expansion-panel>
+                                                  <mat-expansion-panel-header>
+                                                    <mat-panel-title>
+                                                      Personal data
+                                                    </mat-panel-title>
+                                                    <mat-panel-description>
+                                                      Type your name and age
+                                                    </mat-panel-description>
+                                                  </mat-expansion-panel-header>
+                                              
+                                                  <mat-form-field>
+                                                    <input matInput placeholder="First name">
+                                                  </mat-form-field>
+                                              
+                                                  <mat-form-field>
+                                                    <input matInput placeholder="Age">
+                                                  </mat-form-field>
+                                                </mat-expansion-panel>
+                                            </mat-accordion> -->
+
+                                        </span>
+
+                                    </h5>
+                                    <span class="d-block"> <p > {{c.description}}</p></span>
+                                    <div>
+                                        <mat-chip-list>
+                                            <mat-chip color="primary" selected>
+                                                View Store
+                                                <a routerLink="/merchant/store">
+                                                    <mat-icon>shopping_cart</mat-icon>
+                                                </a>
+                                            </mat-chip>
+
+
+                                            <mat-chip color="accent" selected>
+                                                <a routerLink="/merchant">View Profile
+                                                <mat-icon>person</mat-icon>
+                                                </a>
+                                            </mat-chip>
+
+                                        </mat-chip-list>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

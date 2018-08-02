@@ -1,98 +1,92 @@
-
 <mat-card>
- <mat-toolbar color="primary">
-  <mat-toolbar-row>
-    <span>Add Post</span>
-    <span class="example-spacer"></span>
-    <mat-icon class="example-icon float-right">person</mat-icon>
-  </mat-toolbar-row>
-</mat-toolbar>
-<div class="container">
+    <mat-toolbar color="primary">
+        <mat-toolbar-row>
+            <span>Add Post</span>
+            <span class="example-spacer"></span>
+            <mat-icon class="example-icon float-right">person</mat-icon>
+        </mat-toolbar-row>
+    </mat-toolbar>
+    <div class="container">
 
 
-    <form action="" method="POST" role="form" [formGroup]="form" #f="ngForm" (ngSubmit)="submit(f)">
-        
-        <div class="form mt-5" >
+        <form action="" method="POST" role="form" [formGroup]="form" #f="ngForm" (ngSubmit)="submit(f)">
 
-            <mat-form-field appearance="outline">
-                <mat-label>Post Title</mat-label>
-                <input formControlName="merchant_name" matInput placeholder="Merchant Name">
-                <mat-icon matSuffix>work</mat-icon>
-                <mat-hint  *ngIf="form.get('merchant_name').touched && form.get('merchant_name').invalid">
-                <mat-hint *ngIf="form.get('merchant_name').errors.required">item is required</mat-hint>
-                
-                </mat-hint>
-                
-            </mat-form-field>
+            <div class="form mt-5">
 
+                <mat-form-field appearance="outline">
+                    <mat-label>Post Title</mat-label>
+                    <input formControlName="post_name" matInput placeholder="Merchant Name">
+                    <mat-icon matSuffix>work</mat-icon>
+                    <mat-error *ngIf="form.get('post_name').touched && form.get('post_name').invalid">
+                        <mat-error *ngIf="form.get('post_name').errors.required">item is required</mat-error>
 
+                    </mat-error>
 
-            <mat-form-field appearance="outline">
-                <mat-label>Upload picture</mat-label>
-                <input formControlName="email" matInput placeholder="Email">
-                <mat-icon matSuffix>mail</mat-icon>
-             <mat-hint  *ngIf="form.get('email').touched && form.get('email').invalid">
-                <mat-hint *ngIf="form.get('email').errors.required">emai; is required*</mat-hint>
-                <mat-hint *ngIf="form.get('email').errors.pattern">email is invalid</mat-hint>
-
-                </mat-hint>
-            </mat-form-field>
-
-
-            <mat-form-field appearance="outline">
-                <mat-label>Address</mat-label>
-                <input formControlName="address" matInput placeholder="Placeholder">
-                <mat-icon matSuffix>location_on</mat-icon>
-                <mat-hint *ngIf="form.get('address').touched && form.get('address').invalid">
-                <mat-hint *ngIf="form.get('address').errors.required"> Address is required*</mat-hint>
-                
-                </mat-hint>
-            </mat-form-field>
-
-            
-             <mat-form-field appearance="outline">
-            <mat-label>Description</mat-label>
-            <textarea 
-            formControlName="about_merchant"
-            cdkTextareaAutosize
-            #autosize="cdkTextareaAutosize"
-            cdkAutosizeMinRows="4"
-            cdkAutosizeMaxRows="5" matInput placeholder="Leave a comment"> </textarea>
-            <mat-icon matSuffix>State</mat-icon>
-                <mat-hint *ngIf="form.get('about_merchant').touched && form.get('about_merchant').invalid">
-                <mat-hint *ngIf="form.get('about_merchant').errors.maxLength"> Maximum Size is 300 Letters</mat-hint>
-                
-                </mat-hint>
                 </mat-form-field>
 
-            <mat-form-field appearance="outline">
-                <mat-label>Price</mat-label>
-                <input formControlName="phone_number1" matInput placeholder="Phone Number 1">
-                <mat-icon matSuffix>phone</mat-icon>
-                <mat-hint *ngIf="form.get('phone_number1').touched && form.get('phone_number1').invalid">
-                <mat-hint *ngIf="form.get('phone_number1').errors.required"> Phone Number 1 is required*</mat-hint>
-                 <mat-hint *ngIf="form.get('phone_number1').pattern"> Phone Number  is invalid</mat-hint>
-                </mat-hint>
-            </mat-form-field>
 
 
-            <mat-form-field appearance="outline">
-                <mat-label> Other Phone Number</mat-label>
-                <input formControlName="phone_number2" matInput placeholder="Other phone Number">
-                <mat-icon matSuffix>phone</mat-icon>
-               <mat-hint *ngIf="form.get('phone_number1').touched && form.get('phone_number1').invalid">
-                <mat-hint *ngIf="form.get('phone_number2').pattern"> Phone Number  is invalid</mat-hint>
-                
-                </mat-hint>
-            </mat-form-field>
-
-      
+                <mat-form-field appearance="outline">
+                    <mat-label>Upload picture</mat-label>
+                    <input formControlName="picture" matInput placeholder="Email">
+                    <mat-icon matSuffix>mail</mat-icon>
+                    <mat-error *ngIf="form.get('picture').touched && form.get('email').invalid">
+                        <mat-error *ngIf="form.get('email').errors.required">emai; is required*</mat-error>
 
 
-        </div>
+                    </mat-error>
+                </mat-form-field>
 
-        <button type="submit" mat-raised-button color="primary" [disabled]="!f.valid" class="mx-auto d-block">Submit</button>
-    </form>
 
-</div>
+                <mat-form-field appearance="outline">
+                    <mat-label>Address</mat-label>
+                    <input formControlName="address" matInput placeholder="Placeholder">
+                    <mat-icon matSuffix>location_on</mat-icon>
+                    <mat-error *ngIf="form.get('address').touched && form.get('address').invalid">
+                        <mat-error *ngIf="form.get('address').errors.required"> Address is required*</mat-error>
+
+                    </mat-error>
+                </mat-form-field>
+
+
+                <mat-form-field appearance="outline">
+                    <mat-label>Description</mat-label>
+                    <textarea formControlName="about_merchant" cdkTextareaAutosize #autosize="cdkTextareaAutosize" cdkAutosizeMinRows="4" cdkAutosizeMaxRows="5" matInput placeholder="Leave a comment"> </textarea>
+                    <mat-icon matSuffix>State</mat-icon>
+                    <mat-error *ngIf="form.get('about_merchant').touched && form.get('about_merchant').invalid">
+                        <mat-error *ngIf="form.get('about_merchant').errors.maxLength"> Maximum Size is 300 Letters</mat-error>
+
+                    </mat-error>
+                </mat-form-field>
+
+                <mat-form-field appearance="outline">
+                    <mat-label>Price</mat-label>
+                    <input formControlName="phone_number1" matInput placeholder="Phone Number 1">
+                    <mat-icon matSuffix>phone</mat-icon>
+                    <mat-error *ngIf="form.get('phone_number1').touched && form.get('phone_number1').invalid">
+                        <mat-error *ngIf="form.get('phone_number1').errors.required"> Phone Number 1 is required*</mat-error>
+                        <mat-error *ngIf="form.get('phone_number1').pattern"> Phone Number is invalid</mat-error>
+                    </mat-error>
+                </mat-form-field>
+
+
+                <mat-form-field appearance="outline">
+                    <mat-label> Other Phone Number</mat-label>
+                    <input formControlName="phone_number2" matInput placeholder="Other phone Number">
+                    <mat-icon matSuffix>phone</mat-icon>
+                    <mat-error *ngIf="form.get('phone_number1').touched && form.get('phone_number1').invalid">
+                        <mat-error *ngIf="form.get('phone_number2').pattern"> Phone Number is invalid</mat-error>
+
+                    </mat-error>
+                </mat-form-field>
+
+
+
+
+            </div>
+
+            <button type="submit" mat-raised-button color="primary" [disabled]="!f.valid" class="mx-auto d-block">Submit</button>
+        </form>
+
+    </div>
 </mat-card>

@@ -9,6 +9,7 @@ import {
   MatNativeDateModule,
   MatIconModule,
   MatTableModule,
+  MatExpansionModule,
   
   MatSnackBarModule,
   MatChipsModule,
@@ -50,7 +51,8 @@ import {MatDividerModule} from '@angular/material/divider';
     MatGridListModule,
     MatPaginatorModule,
     MatTableModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    MatExpansionModule
   ]
 })
 export class MatComponentsModule { }
