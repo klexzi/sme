@@ -16,17 +16,20 @@ export class FilterPipe implements PipeTransform {
    
 
   let  search = searchText.toLowerCase();  
-   return directory.filter(params=>{       
-    return    params.tag1.toLowerCase().includes(search)||params.tag3.toLowerCase().includes(search)||params.tag2.toLowerCase().includes(search) || params.name.toLowerCase().includes(search);
+  //  return directory.filter(params=>{       
+  //   return    params.tag1.toLowerCase().includes(search)||params.tag3.toLowerCase().includes(search)||params.tag2.toLowerCase().includes(search) || params.name.toLowerCase().includes(search);
         
          
      
             
-          })              
+  //         })              
             
 
-
-  
+  return  directory.filter(item => 
+    Object.keys(item).some(k => item[k] != null && 
+    item[k].toString().toLowerCase()
+    .includes(search.toLowerCase()))
+    );
 
   }
 

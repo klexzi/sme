@@ -126,9 +126,8 @@
 
                                     <h5 class="title">
                                         {{c.name}}
-                                        <span class="pull-right small"> <br/><mat-chip-list> <mat-chip>{{c.tag1}} </mat-chip> 
-                                        <mat-chip>{{c.tag2}} </mat-chip>
-                                        <mat-chip>{{c.tag3}} </mat-chip>
+                                        <span class="pull-right small"> <br/><mat-chip-list> <mat-chip *ngFor="let tag of c.tags">{{tag}} </mat-chip> 
+                                      
                                         </mat-chip-list>
 
                                         <!-- <mat-accordion>

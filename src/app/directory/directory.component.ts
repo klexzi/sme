@@ -15,15 +15,15 @@ export class DirectoryComponent implements OnInit {
   searchPage= false;
   panelOpenState = false;
   result: any[];
-  bckdata: any[] = [{ 'name': 'kt phones ltm' , 'category': 'accessories' , 'tag1': 'new', 'tag2': 'samsung', 'tag3': 'used ', 'description':'we sell used phones at Ikeja' ,'location':'ikeja'},
-  { 'name': 'adele' , 'category': 'accessories' , 'tag1': 'new', 'tag2': 'new', 'tag3': 'new',  'description':'we sell used phones at Ikeja' ,'location':'ikeja'},
-  { 'name': 'adele' , 'category': 'accessories' , 'tag1': 'new', 'tag2': 'new', 'tag3': 'new',  'description':'we sell used phones at Ikeja' ,'location':'ikeja'},
-  { 'name': 'adele' , 'category': 'accessories' , 'tag1': 'new', 'tag2': 'new', 'tag3': 'new',  'description':'we sell used phones at Ikeja' ,'location':'ikeja'},
-  { 'name': 'adele' , 'category': 'accessories' , 'tag1': 'new', 'tag2': 'new', 'tag3': 'new',  'description':'we sell used phones at Ikeja' ,'location':'ikeja'},
-  { 'name': 'adele' , 'category': 'accessories' , 'tag1': 'new', 'tag2': 'new', 'tag3': 'new',  'description':'we sell used phones at Ikeja' ,'location':'ikeja'},
-  { 'name': 'adele' , 'category': 'accessories' , 'tag1': 'new', 'tag2': 'new', 'tag3': 'new',  'description':'we sell used phones at Ikeja' ,'location':'ikeja'},
-  { 'name': 'adele' , 'category': 'accessories' , 'tag1': 'new', 'tag2': 'new', 'tag3': 'new',  'description':'we sell used phones at Ikeja' ,'location':'ikeja'},
-  { 'name': 'adele' , 'category': 'accessories' , 'tag1': 'new', 'tag2': 'new', 'tag3': 'new',  'description':'we sell used phones at Ikeja' ,'location':'ikeja'},
+  bckdata: any[] = [{ 'name': 'kt phones ltm' , 'category': 'accessories' , 'tags': ['iphones'], 'description':'we sell used phones at Ikeja' ,'location':'ikeja'},
+  { 'name': 'adele' , 'category': '' , 'tags': ['lg phones',  'used phones'],  'description':'we sell used phones at Ikeja' ,'location':'ikeja'},
+  { 'name': 'adele' , 'category': 'accessories' , 'tags': ['lg phones',  'used phones'], 'description':'we sell used phones at Ikeja' ,'location':'ikeja'},
+  { 'name': 'adele' , 'category': 'accessories' , 'tags': ['lg phones',  'used phones'], 'description':'we sell used phones at Ikeja' ,'location':'ikeja'},
+  { 'name': 'adele' , 'category': 'accessories' , 'tags': ['lg phones',  'used phones'],'description':'we sell used phones at Ikeja' ,'location':'ikeja'},
+  { 'name': 'adele' , 'category': 'accessories' , 'tags': ['lg phones',  'used phones'], 'description':'we sell used phones at Ikeja' ,'location':'ikeja'},
+  { 'name': 'adele' , 'category': 'accessories' , 'tags': ['lg phones',  'used phones'],'description':'we sell used phones at Ikeja' ,'location':'ikeja'},
+  { 'name': 'adele' , 'category': 'accessories' , 'tags': ['lg phones',  'used phones'],'description':'we sell used phones at Ikeja' ,'location':'ikeja'},
+  { 'name': 'adele' , 'category': 'accessories' , 'tags': ['lg phones',  'used phones'],'description':'we sell used phones at Ikeja' ,'location':'ikeja'},
 ];
   form = new FormGroup({
     search: new FormControl(null),
