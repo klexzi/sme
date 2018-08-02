@@ -1,31 +1,32 @@
 
-.profile-date {
-    font-size: small;
-    font-weight: bold;
-    margin-bottom: 0;
-}
-.profile-date>span {
-    font-style: oblique;
-    font-weight: normal;
+/* New Stylesheet */
+
+button.profile-button {
+    margin: 0;
+    width: 100%;
 }
 
-.profile-name {
-    font-size: x-large;
+.name {
+    text-transform: capitalize;
+    text-align: center;
+    margin-top: 20px;
 }
 
+.email {
+    text-align: center;
+}
 
+.contact {
+    height: auto;
+    background-color: #ffe57f;
+}
+.contact-info{
+    padding: 40px;
+}
 .contact-info  span {
     margin-left: 15px;
 }
 
 .contact-info .fa {
     font-size: 34px;
-}
-
-
-.material-cust-large-button {
-    width: 250px;
-    height: 70px;
-    padding-top: 13px;
-    color: #ffe57f;
 }

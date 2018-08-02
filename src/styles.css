@@ -3,73 +3,71 @@
 @import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
 html,
 body {
-    font-family: 'Roboto';
+  font-family: 'Roboto';
 }
 
 a {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .spacer {
-    flex: 1 1 auto;
+  flex: 1 1 auto;
 }
 
 mat-sidenav.hide {
-    display: none;
+  display: none;
 }
 
 .nav-link {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
 .nav-link:hover {
-    color: inherit;
+  color: inherit;
 }
-
 
 /** colors **/
 
 .bgr-primary {
-    background-color: #9c27b0;
+  background-color: #7b1fa2;
 }
 
 .bgr-accent {
-    background-color: #ffd740;
+  background-color: #ffd740;
 }
-
 
 /* Market glboabal styles */
 
 .prod-navigation {
-    list-style: none;
-    padding-top: 2px;
-    padding-bottom: 2px;
-    border-color: #e8e5e5;
-    border-style: solid;
-    border-width: 1px 0;
+  list-style: none;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  border-color: #e8e5e5;
+  border-style: solid;
+  border-width: 1px 0;
 }
 
 .prod-navigation:first-child {
-    padding-left: 0;
+  padding-left: 0;
 }
 
 .prod-navigation li {
-    padding-left: 10px;
-    padding-right: 10px;
-    text-align: center;
-    color: #9c27b0;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
+  color: #9c27b0;
 }
 
 .form {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .form>* {
-    width: 100%;
+  width: 100%;
 }
 
 textarea {
-    resize: none;
+  resize: none;
 }

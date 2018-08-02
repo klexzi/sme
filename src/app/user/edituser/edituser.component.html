@@ -1,0 +1,48 @@
+<div class="row ">
+        <div class="col-md-8">
+                        <form class="my-3" [formGroup]="profileForm" (ngSubmit)="updateUser(profileForm)">
+                                        <div class="form-group">
+                                                <mat-form-field class="form-control no-border">
+                                                        <input formControlName="name"
+                                                         matInput placeholder="Name">
+                                                         <mat-icon matSuffix>person</mat-icon>
+                                                         <mat-error>{{ getNameError() }}</mat-error>
+                                                      </mat-form-field>
+                                        </div>
+                                        <div class="form-group">
+                                                <mat-form-field class="form-control no-border">
+                                                        <input formControlName="email"  matInput placeholder="Email">
+                                                      </mat-form-field>
+                                        </div>
+                                        <div class="form-group">
+                                                        <mat-form-field class="form-control no-border">
+                                                                <input formControlName="phonenumber1"  matInput placeholder="Phone Number">
+                                                              <mat-error>{{ getPhoneNumberError() }}</mat-error>
+                                                        </mat-form-field>
+                                                             
+                                        </div>
+                                        <div class="form-group">
+                                                        <mat-form-field class="form-control no-border">
+                                                                <input formControlName="phonenumber2"  matInput placeholder="Alternate Phone Number(optional)">
+                                                             <mat-error> {{ getPhoneNumberError() }}</mat-error>
+                                                        </mat-form-field>
+                                                </div>
+                                        <div class="form-group">
+                                                        <mat-form-field class="form-control no-border">
+                                                                        <textarea formControlName="address" matInput matTextareaAutosize matAutosizeMinRows="2" matAutosizeMaxRows="5" placeholder="Address"></textarea>
+                                                         <mat-error>{{ getAddressError()}}</mat-error>
+                                                         </mat-form-field>
+                                          </div>
+                                        <!-- <div class="form-group">
+                                                <mat-form-field>
+                                                        <input matInput [matDatepicker]="picker" placeholder="Choose a date">
+                                                        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                                                        <mat-datepicker #picker></mat-datepicker>
+                                                      </mat-form-field>
+                                        </div> -->
+
+                                        <button mat-raised-button color="accent" type="submit" (click)="openSnackBar('Profile Updated', 'Succesfully')">Update Profile</button>
+                         </form>
+
+        </div>
+</div>

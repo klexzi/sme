@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -16,7 +17,7 @@ export class LoginComponent implements OnInit {
   });
   email = this.form.get('email');
   password = this.form.get('password');
-  constructor() { }
+  constructor(private route: Router ) { }
 
   ngOnInit() {
   }
@@ -39,6 +40,13 @@ export class LoginComponent implements OnInit {
     if (this.form.valid) {
       // send the form object to the api
       console.log(form);
+      // do a quick local storage
+      localStorage.setItem('email', form.email );
+      localStorage.setItem('password', form.password );
+        if (form.loginType === 'user' ) {
+              // redirect the user to the profile page...playing something
+              this.route.navigateByUrl('/user');
+        }
     }
   }
 }

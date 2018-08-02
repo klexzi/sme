@@ -8,6 +8,7 @@ import {
   MatDatepickerModule,
   MatNativeDateModule,
   MatIconModule,
+  MatExpansionModule,
   MatTableModule,
   MatExpansionModule,
   
@@ -20,7 +21,7 @@ import {
   MatCardModule,
   MatGridListModule ,
   MatListModule,
-  MatPaginatorModule
+  MatPaginatorModule,
 } from '@angular/material';
 import {MatButtonModule} from '@angular/material/button';
 import {MatToolbarModule} from '@angular/material/toolbar';
@@ -50,6 +51,8 @@ import {MatDividerModule} from '@angular/material/divider';
     MatDividerModule,
     MatGridListModule,
     MatPaginatorModule,
+    MatExpansionModule,
+    MatSnackBarModule,
     MatTableModule,
     MatSnackBarModule,
     MatExpansionModule

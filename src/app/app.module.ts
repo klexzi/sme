@@ -34,6 +34,7 @@ import { AboutComponent } from './help/about/about.component';
 import { UserComponent } from './user/user.component';
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
+import { EdituserComponent } from './user/edituser/edituser.component';
 import { MerchantprofileComponent } from './merchantboard/merchantprofile/merchantprofile.component';
 import { EditmerchantComponent } from './merchantboard/editmerchant/editmerchant.component';
 import { AdminComponent } from './admin/admin.component';
@@ -79,6 +80,7 @@ import { FilterPipe } from './filter.pipe';
     AboutComponent,
     LoginComponent,
     SignupComponent,
+    EdituserComponent,
     MerchantprofileComponent,
     EditmerchantComponent,
 
@@ -130,10 +132,13 @@ import { FilterPipe } from './filter.pipe';
       { path: 'help/advertise', component: AdvertiseComponent },
       { path: 'help/about-us', component: AboutComponent },
       { path: 'admin', component: AdminComponent },
+
+      { path: 'user', component: UserComponent },
      ])
   ],
   entryComponents: [
     BlockDialogComponent,
+    DeactivateDialogComponent,
     DialogOverviewExampleDialog,
     DeactivateDialogComponent
   ],
