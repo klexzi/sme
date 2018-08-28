@@ -1,5 +1,7 @@
 # SME
 
+This project is an application that signup small medium enterprises and allow them to post their products and services for the world to see
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8.
 
 ## Development server
